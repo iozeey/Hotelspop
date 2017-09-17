@@ -1,0 +1,113 @@
+.navbar {
+  background: #44587B;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  position:relative;
+  border: #44587B;
+  border-bottom: none;
+  li { 
+    display: inline-block; 
+  }
+  .navbar-left{
+    padding-top: 10px;
+  }
+  a {
+    color: white !important;
+  }
+  .upper_row{
+    background: #44587B;
+    margin-left:4%;
+    margin-right:4%;
+  }
+  .bottom_row{
+    background: white !important;
+    color: black;
+    a{
+      padding-right: 10px;
+      color: black !important;
+    }
+    a:hover{
+      color: #4e6ca0 !important;
+      text-decoration: none;
+    }
+  }
+  .Top_padding{
+    padding-top: 10px;
+    margin-left:4%;
+    margin-right:5%;
+  }
+  .number{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4e6ca0 !important;
+  }
+  .dropdown{
+    background: #2F3E5A;
+    width: 205px;
+    a:hover{
+      background-color: #2F3E5A !important;
+    }
+    a:active{
+      background-color: #2F3E5A !important;
+    }
+    .hello_class{
+      a{
+        color: black !important;
+      }
+      a:hover, a:active, a:visited  {
+        color:  #212f3c !important;
+      }
+      a:hover{
+        background-color: silver !important;
+        color: #2874a6 !important;
+      }
+    }
+    .caret{
+      margin-left: 50px;
+    }
+  }
+  .glyphicon-user{
+    font-size: 10px;
+    color: yellow !important;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 3px 0 0 4px;
+    border: 1px solid silver;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+#footer{
+  margin-top: 40px;
+  border-top: 0.5px solid #ECECEC;
+  border-bottom: 0.5px solid #ECECEC;
+  height: 80px;
+  a{
+    margin-right: 20px;
+    color: silver !important;
+  }
+  a:hover{
+    text-decoration: none !important;
+    color: #2874a6 !important;
+  }
+  .footer-icon{
+    margin-right: 10px;
+    float: right;
+    color: grey !important;
+    font-size: 20px;
+  }
+}
+.footer-block{
+  margin-top: 2.5%;
+}
+.copyright{
+  background-color: #ECECEC;
+  height: 40px;
+  p{
+    margin-top: 10px;
+  }
+}

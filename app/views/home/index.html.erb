@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hotelspop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	<body>
+		<!-- Header Partial View -->
+		<%= render(:partial => 'header') %>
+		<!-- Search Section -->
+		<div class="row background_image">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabContent" id="tabs-1">
+				<span class="hotel_heading">NEED A PLACE TO STAY?</span><br />
+				<span class="hotel_subtitle">Hotelspop offers thousands of hotel accommodations worldwide with no booking fees!</span>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabContent" id="tabs-2">
+				<span class="hotel_heading">FIND CHEAP FLIGHTS AND SAVE</span><br />
+				<span class="hotel_subtitle">Search and Compare our best deals with over 440+ airlines - Book now!</span>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom_border">
+				<ul class="nav nav-pills">
+					<li class="active tab_heading" id="tabs2" onclick="showStuff(this)"><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>FLIGHTS</a></li>
+					<li class="active tab_heading" id="tabs1" onclick="showStuff(this)"><a href="#"><i class="fa fa-building-o" aria-hidden="true"></i>HOTELS</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" id="tabs-1">
+				<!-- Search Box  -->
+	        	<div id="custom-search-input" class="SearchMargin">
+	          		<input type="text" name="searchBar" class="search-query form-control" placeholder="&#xf041; Select a city, airport or landmark"/>
+	        	</div>
+	        </div>
+		</div>
+		<!-- End Searcg Section -->
+		<div class="row rating_section">
+			Hotelspop customer satisfaction
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<i class="fa fa-star-half" aria-hidden="true"></i>
+			<span class="rs_number">95%</span>
+		</div>
+		<!-- start -->
+		<div class="row custom_margin">
+          	<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+          		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 no_padding">
+          			<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          		</div>
+          		<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 no_padding">
+          			<span class="main_heading">EXTENDED CANCELLATION POLICY</span> <br />
+					<span class="subtitle">Book with confidence <a href=""><i class="fa fa-info-circle" title="<strong>Extended Cancellation Policy - Book with confidence.</strong> <br><br> You always have the option to cancel within 24 hours of purchase without JustFly’s standard cancellation fees! Simply opt in to the Extended cancellation policy during checkout, for $19.99 per passenger.<br><br> To claim a refund for the fare difference or a full refund, email us at"" aria-hidden="true"></i></a></span>
+          		</div>
+          	</div>
+          	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+          		<div class="col-xs-1 col-sm-1 col-md-2 col-lg-2 col-xl-1 no_padding">
+          			<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          		</div>
+          		<div class="col-xs-11 col-sm-11 col-md-10 col-lg-10 col-xl-11 no_padding">
+          			<span class="main_heading">WE KNOW FLIGHTS</span> <br />
+					<span class="subtitle">Be served by flight experts</span>
+          		</div>
+          	</div>
+          	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 no_padding">
+          			<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          		</div>
+          		<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 no_padding">
+          			<span class="main_heading">SIMPLE & EASY</span> <br />
+					<span class="subtitle">No more waiting to get your e-tickets</span>
+          		</div>
+          	</div>
+        </div>
+        <!-- End -->
+		<!-- Different Location Trips Section -->
+		<div class="row img_div">
+          	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img_bottom_margin">
+          		<a href="">
+	          		<img class="img-responsive img-rounded" src="/assets/vancouver.jpg" alt="">
+	          		<div class='description'>
+						<!-- description content -->
+						<p class='description_content'>Washington to Vancouver</p>
+						<!-- end description content -->
+					</div>
+				</a>
+          	</div>
+          	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img_bottom_margin">
+          		<a href="">
+	          		<img class="img-responsive img-rounded" src="/assets/cancun.jpg" alt="">
+	          		<div class='description'>
+						<!-- description content -->
+						<p class='description_content'>Washington to Cancun</p>
+						<!-- end description content -->
+					</div>
+				</a>
+          	</div>
+          	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img_bottom_margin">
+	          	<a href="">
+	          		<img class="img-responsive img-rounded" src="/assets/chicago.jpg" alt="">
+	          		<div class='description'>
+						<!-- description content -->
+						<p class='description_content'>Washington to Chicago</p>
+						<!-- end description content -->
+					</div>
+				</a>
+          	</div>
+          	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img_bottom_margin">
+	          	<a href="">
+	          		<img class="img-responsive img-rounded" src="/assets/los-angeles.jpg" alt="">
+	          		<div class='description'>
+						<!-- description content -->
+						<p class='description_content'>Washington to Los-Angeles</p>
+						<!-- end description content -->
+					</div>
+				</a>
+          	</div>
+          	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img_bottom_margin">
+	          	<a href="">
+	          		<img class="img-responsive img-rounded" src="/assets/las-vegas.jpg" alt="">
+	          		<div class='description'>
+						<!-- description content -->
+						<p class='description_content'>Washington to Las-Vegas</p>
+						<!-- end description content -->
+					</div>
+				</a>
+          	</div>
+          	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img_bottom_margin">
+	          	<a href="">
+	          		<img class="img-responsive img-rounded" src="/assets/delhi.jpg" alt=""> 
+	          		<div class='description'>
+						<!-- description content -->
+						<p class='description_content'>Washington to Dehli</p>
+						<!-- end description content -->
+					</div>
+				</a>
+          	</div>
+          	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img_bottom_margin">
+	          	<a href="">
+	          		<img class="img-responsive img-rounded" src="/assets/lima.jpg" alt=""> 
+	          		<div class='description'>
+						<!-- description content -->
+						<p class='description_content'>Washington to Lima</p>
+						<!-- end description content -->
+					</div>
+				</a>
+          	</div>
+        </div>
+		<!-- Different Location Trips Section -->
+        <!-- Bottom Text Area -->
+        <p class="text-muted">
+        	Savings are calculated from an unrestricted published airfare of major scheduled airlines commonly known as refundable tickets. Savings may vary based on availability, advance purchase, minimum stay, travel dates, and blackout dates. Savings may change without notice and other restrictions may apply. Most discounted fares are non-refundable and have restrictions on date and routing changes after ticketing and prior to travel. Savings are based on our research of popular routes on major scheduled airlines based on 21 days advance purchase. These savings are calculated off the unrestricted “Y” class airfares only.
+        </p>
+        <!-- Footer Partial View -->
+        <%= render(:partial => 'footer') %>
+        <!-- Footer Partial View -->
+	</body>
+</html>
+

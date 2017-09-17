@@ -1,0 +1,142 @@
+.background_image{
+	background: image-url('beach.jpg');
+	height: 350px;
+	background-size:100% auto;
+	color: white;
+	padding-left: 5%;
+	padding-right: 4%;
+	padding-top: 3%;
+	.hotel_heading{
+		font-family: Lato, sans-serif;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.hotel_subtitle{
+		font-family: Lato, sans-serif;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.tab_heading{
+		font-family: "Source Sans Pro", sans-serif;
+		font-weight: 900;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.bottom_border{
+		margin-right: 4%;
+		border-bottom: 2px solid silver;
+	}
+	.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    	background-color: transparent !important;
+    	border: none;
+    	margin:0 !important;
+    	padding-left:0;
+    	border-bottom: 1px grey solid;
+	}
+	#custom-search-input {
+  		margin-top: 18px;
+  		padding: 0;
+	}
+	#custom-search-input .search-query {
+	    padding-right: 13px;
+	    padding-right: 14px \9;
+	    padding-left: 13px;
+	    padding-left: 14px \9;
+	    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+	    -webkit-appearance:none;
+	    margin-bottom: 0;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	}
+	.search-query:focus + button {
+  		z-index: 3;   
+	}
+}
+.rating_section{
+	background-color: #F1F1F1;
+	height: 47px;
+	padding-top: 10px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	text-align: center;
+	color: #666666;
+	.rs_number{
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 18px;
+		padding-left: 8px;
+	}
+}
+.custom_margin{
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.main_heading{
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 18px;
+}
+.subtitle{
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+}
+.no_padding{ /* Fa-Check Icon and Heading */
+	padding:0 !important;
+}
+.fa-check-circle-o{
+	color: green;
+	font-size: 30px !important;
+}
+.fa-info-circle{
+	color: silver;
+	font-size: 0.2em;
+}
+.text-muted{
+	font-size: 11px;
+	line-height: 13px;
+	margin-left: 4%;
+	margin-top: 2%;
+	margin-right: 4%;
+}
+.tabContent {
+    display:none;
+}
+.div.wrapper{
+	float:left; /* important */
+	position:relative; /* important(so we can absolutely position the description div */
+}
+div.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	top:15px; /* position will be on bottom */
+	left:25px;
+	/* styling bellow */
+	opacity:0.6; /* transparency */
+	filter:alpha(opacity=60); /* IE transparency */
+}
+p.description_content{
+	background-color: #073171;
+	color:White;
+	padding:10px;
+	margin:0px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.img_div{
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.img_bottom_margin{
+	margin-bottom: 10px;
+}
+.img-rounded{
+	border-radius: 3px !important;
+}
