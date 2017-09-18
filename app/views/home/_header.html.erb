@@ -1,7 +1,7 @@
 <!-- Start Navbar -->
 	  <nav class="navbar navbar-default">
 	    <div class="container-fluid">
-		    <div class="row upper_row">
+		    <div class="row upper_nav_row">
 		    	<div class="navbar-header">
 		        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar, #myNavbar2">
 			          	<span class="icon-bar"></span>
@@ -15,16 +15,16 @@
 		          <li><a href="#">MY BOOKINGS</a></li>
 		          <li class="dropdown"><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button"><i class="glyphicon glyphicon-user"></i>Hello, guest <span class="caret"></span></a>
             		<ul role="menu" class="dropdown-menu hello_class" aria-labelledby="drop1">
-		                <li role="presentation"><a href="#" role="menuitem">Sign In</a></li>
-		                <li role="presentation"><a href="#" role="menuitem">Create A New Account</a></li>
-		                <li role="presentation"><a href="#" role="menuitem">My Bookings</a></li>
-		                <li role="presentation"><a href="#" role="menuitem">Alerts & Notifications</a></li>
+		                <li role="presentation"><a href="#" role="menuitem">SIGN IN</a></li>
+		                <li role="presentation"><a href="#" role="menuitem">CREATE A NEW ACCOUNT</a></li>
+		                <li role="presentation"><a href="#" role="menuitem">MY BOOKING</a></li>
+		                <li role="presentation"><a href="#" role="menuitem">ALERTS & NOTIFICATIONS</a></li>
             		</ul>
         		  </li>
 		        </ul>
 		      </div>
 		    </div>
-		    <div class="row bottom_row">
+		    <div class="row bottom_nav_row">
 		    <div class="collapse navbar-collapse Top_padding" id="myNavbar2">
 		    	<li> <%= link_to('FLIGHTS', {})%></li>
 		    	<li> <%= link_to('HOTELS', {})%></li>
@@ -32,13 +32,14 @@
 		    	<li> <%= link_to('CRUISES', {})%></li>
 		    	<li> <%= link_to('SUPPORT', {})%></li>
 		        <ul class="nav navbar-nav navbar-right">
-		        	 <!-- <li class="flag_dropdown"><a href="#" id="drop2" data-toggle="dropdown" class="dropdown-toggle" role="button"> USD <b class="caret"></b></a>
+		        	<li class="flag pk"></li>
+		        	 <li class="flag_dropdown"><a href="#" id="drop2" data-toggle="dropdown" class="dropdown-toggle" role="button"> USD <b class="caret"></b></a>
             			<ul role="menu" class="dropdown-menu" aria-labelledby="drop2">
 		                	<li role="presentation"><a href="#" role="menuitem">USD</a></li> <br /> 
 		                	<li role="presentation"><a href="#" role="menuitem">CAD</a></li> 	
             			</ul>
-        		  	</li> -->
-        			<span class="number">1-800-717-5015</span>
+        		  	</li>
+        		  	<a class="number" href="tel:1-800-717-5015">1-800-717-5015</a>
 		        </ul>
 		      </div>
 		    </div>
