@@ -1,11 +1,13 @@
 .navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
   background: #44587B;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 12px;
   font-weight: bold;
   position:relative;
   border: #44587B;
-  border-bottom: none;
+  border-bottom: 0px;
   li { 
     display: inline-block; 
   }
@@ -15,13 +17,15 @@
   a {
     color: white !important;
   }
-  .upper_row{
+  .upper_nav_row{
     background: #44587B;
     margin-left:4%;
     margin-right:4%;
   }
-  .bottom_row{
+  .bottom_nav_row{
     background: white !important;
+    font-size: 11px;
+    line-height: 1.828571429;
     color: black;
     a{
       padding-right: 10px;
@@ -31,17 +35,25 @@
       color: #4e6ca0 !important;
       text-decoration: none;
     }
-  }
-  .Top_padding{
-    padding-top: 10px;
-    margin-left:4%;
-    margin-right:5%;
-  }
-  .number{
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    color: #4e6ca0 !important;
+    .Top_padding{
+      padding-top: 10px;
+      margin-left:4%;
+      margin-right:5%;
+    }
+    .number{
+      color: #4e6ca0 !important;
+    }
+    .flag_dropdown{
+      padding: 0;
+      margin-top: -17px;
+    }
+    .dropdown-toggle{
+      background-color: transparent !important;
+    }
+    .dropdown-menu{
+      min-width: 100px;
+      font-size: 12px;
+    }
   }
   .dropdown{
     background: #2F3E5A;
@@ -52,15 +64,21 @@
     a:active{
       background-color: #2F3E5A !important;
     }
+    a:focus{
+      background-color: #2F3E5A !important;
+    }
     .hello_class{
       a{
         color: black !important;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.928571429;
       }
       a:hover, a:active, a:visited  {
         color:  #212f3c !important;
       }
       a:hover{
-        background-color: silver !important;
+        background-color: #F5F5F5 !important;
         color: #2874a6 !important;
       }
     }
@@ -70,7 +88,7 @@
   }
   .glyphicon-user{
     font-size: 10px;
-    color: yellow !important;
+    color: #EABC51 !important;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -80,7 +98,6 @@
     margin-right: 10px;
   }
 }
-
 #footer{
   margin-top: 40px;
   border-top: 0.5px solid #ECECEC;
@@ -110,4 +127,13 @@
   p{
     margin-top: 10px;
   }
+}
+.flag {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    background: url(/assets/flags.png) no-repeat;
+}
+.flag.flag-pk {
+    background-position: -160px -110px;
 }
