@@ -140,3 +140,14 @@ p.description_content{
 .img-rounded{
 	border-radius: 3px !important;
 }
+.hotel-container{
+	.container, .row {	
+		padding-left: 0;
+		padding-right: 0;
+
+		.col-md-6 {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
