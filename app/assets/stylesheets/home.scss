@@ -119,8 +119,8 @@ div.description{
 	top:15px; /* position will be on bottom */
 	left:25px;
 	/* styling bellow */
-	opacity:0.6; /* transparency */
-	filter:alpha(opacity=60); /* IE transparency */
+	opacity:0.65; /* transparency */
+	filter:alpha(opacity=65); /* IE transparency */
 }
 p.description_content{
 	background-color: #073171;
@@ -144,10 +144,477 @@ p.description_content{
 	.container, .row {	
 		padding-left: 0;
 		padding-right: 0;
-
 		.col-md-6 {
 			padding-left: 0;
 			padding-right: 0;
 		}
+	}
+}
+.inside_img_div{
+	width: 101%;
+    margin-left: inherit;
+}
+/* copied content started */
+.hp-photo-wrap {
+    background: image-url('beach.jpg') no-repeat center;
+    background-size: cover;
+    background-color: #f5f5f5;
+    padding: 30px 0 40px 0;
+    position: relative;
+}
+.hp-form-wrap.general-container {
+    width: 90%;
+}
+.hp-form-wrap {
+    position: relative;
+    z-index: 2;
+}
+.general-container {
+    max-width: 1170px;
+    margin: auto;
+}
+.hp-slogan {
+    font-family: "Lato", sans-serif;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.1);
+    font-weight: 900;
+    text-align: left;
+}
+.hp-slogan strong, .slogan-subtitle strong {
+    font-weight: inherit;
+}
+.hp-slogan .main {
+    text-transform: uppercase;
+}
+.slogan-subtitle {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+.slogan-subtitle strong {
+    display: inline-block;
+    font-weight: inherit;
+}
+.search-selection-tabs {
+    font-size: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+.home.index .search-selection-tab {
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+.search-selection-tab {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 -2px 0;
+    padding: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    border-bottom: 2px solid;
+    border-color: transparent;
+}
+.search-selection-tab .jf-icon {
+    margin-right: 8px;
+    font-size: 13px;
+}
+.search-selection-tab .jf-icon, .search-selection-tab span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.jf-icon {
+    line-height: 1;
+}
+.search-selection-tab .jf-icon, .search-selection-tab span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.search-selection-tab.active {
+    color: #FFFACF;
+    border-color: #ffffff;
+}
+.search-selection-tab + .search-selection-tab {
+    margin-left: 5px;
+}
+.has-icons .mobile-calendar-toggle, .has-icons.main-search-form .passenger-toggle, .has-icons.main-search-form input:not([type=checkbox]) {
+    padding-left: 35px;
+}
+.main-search-form input:not([type=checkbox]), .form-field-from input:not([type=checkbox]), .form-field-from-date input:not([type=checkbox]), .form-field-to input:not([type=checkbox]), .form-field-to-date input:not([type=checkbox]) {
+    border: 1px solid #dcdcdc;
+    border-right: 1px solid #fff;
+    width: 100%;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-field-wrap.cars input, .form-field-from input {
+    border-radius: 2px 0 0 2px;
+}
+.form-field-wrap.destination input, .form-field-from input {
+    border-radius: 2px 0 0 2px;
+}
+input, textarea, button {
+    font-family: inherit;
+}
+.mobile-calendar-toggle, .main-search-form .passenger-toggle, .main-search-form input:not([type=checkbox]) {
+    display: block;
+    background: #fff;
+    height: 52px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+    border-right: 1px solid #fff;
+    color: #000;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    outline: 0;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+.inline-search-form {
+    background: none !important;
+    margin-bottom: 10px;
+}
+.form-filters-left {
+    position: relative;
+}
+.flight-type ul {
+    margin: 0 0 10px -5px;
+    padding: 0;
+    font-size: 0;
+}
+ol, ul {
+    list-style: none;
+}
+.flight-type .item {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+.display-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.inline-search-form .table-wrap > .column {
+    vertical-align: top;
+}
+.has-icons .form-field-from:before {
+    content: "\64";
+    font-size: 14px;
+}
+.has-icons .mobile-calendar-toggle:before, .has-icons .search-field-wrap.checkout:before, .has-icons .search-field-wrap.checkin:before, .has-icons .form-field-wrap:before, .has-icons .passenger-toggle:before{
+	color: #b9b9b9;
+    font-family: "jf-dashboard";
+    font-size: 13px;
+    font-style: normal !important;
+    text-transform: none !important;
+    font-weight: normal !important;
+    position: absolute;
+    line-height: 1;
+    top: 20px;
+    left: 12px;
+    pointer-events: none;
+}
+.form-fields-wrap, .form-fields-wrap-multi {
+    position: relative;
+}
+.form-field-to, .form-field-from {
+    margin: 0;
+    float: left;
+    width: 30%;
+    position: relative;
+}
+.form-field-to-date, .form-field-from-date {
+    margin: 0;
+    float: left;
+    width: 20%;
+    position: relative;
+}
+.inline-search-form .column.search {
+    font-size: 0;
+    width: 320px;
+}
+.form-filters-wrap.flight-class {
+    margin-top: 10px;
+}
+.form-field-button a.form-field-submit-button, .main-search-form button, .form-field-button button {
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: #69b524;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    border-radius: 0 2px 2px 0;
+}
+.display-table .column {
+    display: table-cell;
+}
+.main-search-form-validation {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    bottom: 100%;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    background: #CA5845;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+}
+.main-search-form .search-field-wrap.checkin, .main-search-form .search-field-wrap.checkout {
+    width: 140px;
+}
+.main-search-form .search-field-wrap {
+    vertical-align: top;
+    position: relative;
+}
+.main-search-form .search-field-wrap.rooms {
+    width: 150px;
+}
+.main-search-form .passenger-toggle {
+    line-height: 46px;
+    text-align: left;
+    font-weight: normal;
+}
+.main-search-form .passenger-toggle span{
+    vertical-align: middle;
+}
+.search-dropdown-toggle > .fa, .form-field-passengers .passenger-toggle > .fa {
+    right: 10px;
+    margin-top: -5px;
+    color: #666;
+}
+.flight-class .select-wrapper .fa, .search-dropdown-toggle > .fa, .form-field-passengers .passenger-toggle > .fa {
+    position: absolute;
+    top: 50%;
+    font-size: 9px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.search-dropdown {
+    display: none;
+    padding: 2px 10px 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 220px;
+    z-index: 1000;
+    text-align: left;
+    background: #FFF;
+    cursor: default;
+    overflow: hidden;
+    outline: 0;
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.passenger-type .label {
+    font-size: 13px;
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: center;
+    color: #455D88;
+    padding: 0 10px 0 0;
+}
+.passenger-type .picker {
+    width: 90px;
+}
+.passenger-type .column {
+    vertical-align: middle;
+}
+.search-dropdown-toggle .passenger-type, .form-field-passengers .passenger-type {
+    border-bottom: 1px dashed #dcdcdc;
+    padding: 8px 0;
+    line-height: 1;
+}
+.close-passenger-picker {
+    margin: -1px -10px -5px -10px;
+    padding: 15px;
+    background: #455D88;
+    text-align: center;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+.main-search-form .search-field-wrap.submit {
+    width: 200px;
+}
+.form-field-wrap.destination input, .form-field-from input {
+    border-radius: 2px 0 0 2px;
+}
+.form-wrap-roundtrip .form-fields-wrap-multi, .form-wrap-oneway .form-fields-wrap-multi {
+    display: none;
+}
+.form-fields-wrap-multi, .form-fields-wrap-multi + .form-fields-wrap-multi, .form-filters-wrap.flight-class {
+    margin-top: 10px;
+}
+.form-field-passengers {
+    text-align: center;
+    position: relative;
+}
+.search-dropdown-toggle {
+    position: relative;
+}
+.main-search-form .passenger-toggle span, .form-field-passengers .passenger-toggle span {
+    vertical-align: middle;
+}
+.form-field-button a.form-field-submit-button {
+    display: none;
+}
+.form-field-passengers, .form-field-button {
+    font-size: 14px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.home.index .flight-type .item a,{
+	text-shadow: 0 1px 1px rgba(0,0,0,.2)
+}
+.flight-type .item a {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.item-hotels-search input[type=checkbox] + label, .flight-class .item a, .flight-type .item a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    line-height: 1;
+    font-size: 14px;
+}
+.flight-type .item a.active, .flight-type .item a:hover {
+    color: #ffe1a0;
+}
+clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.flight-class ul {
+    margin-left: -5px;
+}
+.flight-class .item:not(.item-hotels-search) {
+    display: inline-block;
+}
+.flight-type .item, .flight-class .item {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+.home.index .home-page-recent-items-title, .home.index .form-field-segment .multicity-btn, .home.index .item-hotels-search input[type=checkbox] + label, .home.index .flight-class .item a, .home.index .flight-type .item a, .home.index .search-selection-tab {
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.item-hotels-search input[type=checkbox] + label, .flight-class .item a {
+    font-weight: 600;
+}
+.flight-class .select-wrapper {
+    padding-right: 20px !important;
+    position: relative;
+}
+.select-wrapper {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    outline: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.select-wrapper .fa, .select-down-arrow, .select-first-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flight-class .select-wrapper .fa {
+    right: 0;
+    margin-top: -4px;
+}
+.styled-select {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    min-width: 100%;
+    line-height: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    filter: alpha(opacity = 0);
+}
+
+.item-hotels-search.before-recent-searches {
+    margin-bottom: 3px;
+}
+
+@media screen and (min-width: 876px){
+	.item-hotels-search.after-recent-searches {
+	    display: none;
+	}
+}
+
+@media screen and (min-width: 876px){
+	.item-hotels-search.before-recent-searches {
+	    display: none;
+	}
+}
+
+@media only screen and (min-width: 1161px){
+	.home .inline-search-form .column.search {
+	    width: 360px;
 	}
 }

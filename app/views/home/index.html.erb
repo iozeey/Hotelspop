@@ -1,4 +1,407 @@
-<div class="row background_image">
+
+<div class="hp-photo-wrap">
+    <div class="hp-form-wrap general-container">
+        <div class="hp-slogan flights" data-tab-text="search-flights">
+            <span class="main">Find <strong>Cheap Flights</strong>
+                <span class="mobile-break">and <strong>Save</strong></span>
+            </span>
+            <div class="slogan-subtitle">
+                <strong>Search</strong> and <strong>Compare</strong> our best deals with over 440+ airlines - <strong>Book now!</strong>
+            </div>
+        </div>
+        <div class="hp-slogan hotels" data-tab-text="search-hotels">
+            <span class="main"><strong>Need a place to stay?</strong></span>
+            <div class="slogan-subtitle">
+                Hotelspop offers <strong>thousands of hotel accommodations</strong> worldwide with <strong>no booking fees!</strong>
+            </div>
+        </div>
+        
+        <div class="search-form-selection">
+            <div class="search-selection-tabs">
+                <div class="search-selection-tab flights" data-tab="search-flights">
+                    <span class="jf-icon jf-plane"></span><span>Flights</span>
+                </div>
+                <div class="search-selection-tab hotels active" data-tab="search-hotels">
+                    <span class="jf-icon jf-building"></span><span>Hotels</span>
+                </div>
+            </div>
+            
+            <div class="search-selection-wrap home-page">
+                <form name="air_search_form" action="/flight/search" method="get" class="inline-search-form-form main-search-form has-icons" autocomplete="off" data-tab-target="search-flights" data-selected-currency="USD" data-hotels-search="true">
+                <input type="hidden" name="new_search" value="1">
+
+                <div class="inline-search-form form-wrap-roundtrip" id="inline-search-form-1">
+                    <div class="form-filters-wrap flight-type clearfix">
+                        <div class="form-filters-left">
+                            <ul class="clearfix inline-search-form-mode">
+                                <li class="item"><a href="" id="toggle-roundtrip" class="active search-type-toggle" rel="roundtrip">Round Trip</a></li>
+                                <li class="item"><a href="" id="toggle-oneway" class=" search-type-toggle" rel="oneway">One Way</a></li>
+                                <li class="item"><a href="" id="toggle-multi" class=" search-type-toggle" rel="multi">Multi-City</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="display-table table-wrap">
+                        <div class="column inputs">
+                            <div class="form-fields-wrap clearfix">
+                                <div class="form-field-wrap form-field-from">
+                                    <input type="text" name="seg0_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
+                                    <input type="hidden" name="seg0_from_code" value="">
+                                </div>
+
+                                <div class="form-field-wrap form-field-to">
+                                    <input type="text" name="seg0_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
+                                    <input type="hidden" name="seg0_to_code" value="">
+                                </div>
+
+                                <div class="form-field-wrap form-field-from-date">
+                                    <input readonly="true" type="text" name="seg0_date" placeholder="Departing" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602981">
+                                </div>
+
+                                <div class="form-field-wrap form-field-to-date">
+                                    <input readonly="true" type="text" name="seg1_date" placeholder="Returning" autocomplete="off" class="date-field-to hasDatepicker" value="" id="dp1505772602982">
+                                </div>
+                                
+                                <div id="multi-city-wrapper" class="multi-city-wrapper mobile-only"></div>
+
+                            </div>
+                            
+                            <div class="form-fields-wrap-multi-container">
+                                <div class="form-fields-wrap-multi clearfix displayed-field" id="inline-search-form-segment-1">
+                                    <div style="overflow:hidden;">
+                                        <div class="form-field-wrap form-field-from">
+                                            <input type="text" name="seg1_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
+
+                                            <input type="hidden" name="seg1_from_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-to">
+                                            <input type="text" name="seg1_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
+                                            <input type="hidden" name="seg1_to_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date">
+                                            <input readonly="true" type="text" name="seg1_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602983">
+                                        </div>
+                                    </div>
+                                    <div class="form-field-segment">
+                                        <div class="inline-search-form-add-segment-container">
+                                            <a href="" class="multicity-btn inline-search-form-add-segment">+ Add segment</a>
+                                        </div>
+                                        <div class="inline-search-form-remove-segment-container">
+                                            <a href="" class="multicity-btn inline-search-form-remove-segment">- Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-fields-wrap-multi clearfix" id="inline-search-form-segment-2" style="display:none;">
+                                    <div style="overflow:hidden;">
+                                        <div class="form-field-wrap form-field-from">
+                                            <input type="text" name="seg2_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
+                                            <input type="hidden" name="seg2_from_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-to">
+                                            <input type="text" name="seg2_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
+                                            <input type="hidden" name="seg2_to_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date">
+                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602984">
+                                        </div>
+                                    </div>
+                                    <div class="form-field-segment">
+                                        <div class="inline-search-form-add-segment-container">
+                                            <a href="" class="multicity-btn inline-search-form-add-segment">+ Add segment</a>
+                                        </div>
+                                        <div class="inline-search-form-remove-segment-container">
+                                             <a href="" class="multicity-btn inline-search-form-remove-segment">- Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-fields-wrap-multi clearfix" id="inline-search-form-segment-3" style="display:none;">
+                                    <div style="overflow:hidden;">
+                                        <div class="form-field-wrap form-field-from">
+                                            <input type="text" name="seg3_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
+                                            <input type="hidden" name="seg3_from_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-to">
+                                            <input type="text" name="seg3_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
+                                            <input type="hidden" name="seg3_to_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date">
+                                            <input readonly="true" type="text" name="seg3_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602985">
+                                        </div>
+                                    </div>
+                                    <div class="form-field-segment">
+                                        <div class="inline-search-form-add-segment-container">
+                                            <a href="" class="multicity-btn inline-search-form-add-segment">+ Add segment</a>
+                                        </div>
+                                        <div class="inline-search-form-remove-segment-container">
+                                            <a href="" class="multicity-btn inline-search-form-remove-segment">- Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-fields-wrap-multi clearfix" id="inline-search-form-segment-4" style="display:none;">
+                                  <div style="overflow:hidden;">
+                                        <div class="form-field-wrap form-field-from">
+                                            <input type="text" name="seg4_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
+                                            <input type="hidden" name="seg4_from_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-to">
+                                            <input type="text" name="seg4_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
+                                            <input type="hidden" name="seg4_to_code" value="">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date">
+                                            <input readonly="true" type="text" name="seg4_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602986">
+                                        </div>
+                                  </div>
+                                  <div class="form-field-segment">
+                                      <div class="inline-search-form-add-segment-container">
+                                          <a href="" class="multicity-btn inline-search-form-add-segment">+ Add segment</a>
+                                      </div>
+                                      <div class="inline-search-form-remove-segment-container">
+                                          <a href="" class="multicity-btn inline-search-form-remove-segment">- Remove</a>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="type" value="roundtrip">
+                        </div>
+                        <div class="column search"> 
+                            <div class="form-field-passengers">
+                                <div class="passenger-toggle-wrap">
+                                    <div tabindex="0" class="passenger-toggle search-dropdown-toggle" data-dropdown="passengers">
+                                        <span id="num-passengers" class="num-passengers" data-passengers="1">1</span> <span>Passenger(s)</span>
+                                        <i class="fa fa-chevron-down"></i>
+                                        <div id="passengers" class="search-dropdown">
+                                          <div class="passenger-type display-table">
+                                              <div class="pass-left column label">Adult</div>
+                                              <div class="pass-right column picker">
+                                                  <div class="passenger-picker">
+                                                      <input type="hidden" class="passengerType" name="num_adults" data-field-min="1" data-field-limit="8" data-field-id="num_adults" value="1">
+                                                      <div class="display-table picker-wrapper">
+                                                          <div class="column picker-button remove disabled">
+                                                              <i class="fa fa-minus"></i>
+                                                            </div>
+                                                            <div class="column qty">
+                                                                <span id="num_adults">1</span>
+                                                            </div>
+                                                            <div class="column picker-button add ">
+                                                                <i class="fa fa-plus"></i>
+                                                            </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="passenger-type display-table">
+                                              <div class="pass-left column label">
+                                                  Children
+                                                  <div class="age">2-11</div>
+                                              </div>
+                                              <div class="pass-right column picker">
+                                                  <div class="passenger-picker">
+                                                      <input type="hidden" class="passengerType" name="num_children" data-field-min="0" data-field-limit="8" data-field-id="num_children" value="0">
+                                                      <div class="display-table picker-wrapper">
+                                                          <div class="column picker-button remove disabled">
+                                                              <i class="fa fa-minus"></i>
+                                                          </div>
+                                                          <div class="column qty">
+                                                              <span id="num_children">0</span>
+                                                          </div>
+                                                          <div class="column picker-button add ">
+                                                              <i class="fa fa-plus"></i>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="passenger-type display-table">
+                                              <div class="pass-left column label">
+                                                  Infants
+                                                  <div class="age">0-2</div>
+                                              </div>
+                                              <div class="pass-right column picker">
+                                                  <div class="passenger-picker">
+                                                      <input type="hidden" class="passengerType" name="num_infants" data-field-min="0" data-field-limit="4" data-field-id="num_infants" value="0">
+                                                      <div class="display-table picker-wrapper">
+                                                          <div class="column picker-button remove disabled">
+                                                              <i class="fa fa-minus"></i>
+                                                          </div>
+                                                          <div class="column qty">
+                                                              <span id="num_infants">0</span>
+                                                          </div>
+                                                          <div class="column picker-button add ">
+                                                              <i class="fa fa-plus"></i>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="passenger-type display-table">
+                                              <div class="pass-left column label">
+                                                  Infants (lap)
+                                                  <div class="age">0-2</div>
+                                              </div>
+                                              <div class="pass-right column picker">
+                                                  <div class="passenger-picker">
+                                                      <input type="hidden" class="passengerType" name="num_infants_lap" data-field-min="0" data-field-limit="4" data-field-id="num_infants_lap" value="0">
+                                                      <div class="display-table picker-wrapper">
+                                                          <div class="column picker-button remove disabled">
+                                                              <i class="fa fa-minus"></i>
+                                                          </div>
+                                                          <div class="column qty">
+                                                              <span id="num_infants_lap">0</span>
+                                                          </div>
+                                                          <div class="column picker-button add ">
+                                                              <i class="fa fa-plus"></i>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="close-passenger-picker">Done</div>
+                                      </div>
+                                  </div>
+                            </div>
+                        </div>                            
+                        <div class="form-field-button">
+                                <a href="#" class="form-field-submit-button">SEARCH</a>
+                                <button type="submit">SEARCH</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-filters-wrap clearfix flight-class">
+                        <div class="form-filters-left">
+                            <ul class="filter-list">
+                                <li class="item">
+                                    <a class="select-wrapper" rel="seat_class">
+                                      <span class="select-first-text" rel="seat_class">Economy</span>
+                                      <i class="select-down-arrow fa fa-chevron-down"></i>
+                                      <select name="seat_class" class="text styled-select">
+                                          <option value="Economy" selected="">Economy</option>
+                                          <option value="EconomyPremium">Premium Economy</option>
+                                          <option value="Business">Business</option>
+                                          <option value="First">First</option>
+                                      </select>
+                                    </a>
+                                </li>
+
+                                <li class="item item-hotels-search before-recent-searches">
+                                  <input type="checkbox" id="hotels_search" name="hotels_search" value="1" checked="checked">
+                                  <label for="hotels_search"><span>Include hotel options</span></label>
+                                </li>
+                                <li class="item item-hotels-search after-recent-searches">
+                                  <input type="checkbox" id="hotels_search" name="hotels_search" value="1" checked="checked">
+                                  <label for="hotels_search"><span>Include hotel options</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-recent-items-wrap">
+                    <div class="inner">
+                    </div>
+                </div>
+            </form>
+            <form action="/hotel/searchresults?label=hotel_tab" class="main-search-form has-icons hotels" id="hotel-search-form" method="get" data-tab-target="search-hotels">
+              <div class="input-wrap">
+                  <input type="hidden" name="selected_currency" value="USD">
+                  <input type="hidden" name="dest_id" value="">
+                  <input type="hidden" name="dest_type" value="">
+                  <input type="hidden" name="label" value="hotel_tab">
+              </div>
+              <ul class="display-table main-search-form-field-wrap">
+                  <li class="column search-field-wrap form-field-wrap destination">
+                      <input id="hotel_autocomplete" name="ss" placeholder="Select a city, airport or landmark" autocomplete="off" type="text" class="airport-related ui-autocomplete-input">
+                      <div class="main-search-form-validation">Please type a destination</div>
+                  </li>
+                  <li class="column search-field-wrap form-field-wrap checkin">
+                      <input name="checkin" readonly="true" placeholder="Check-in" autocomplete="off" type="text" class="hasDatepicker" val="" id="dp1505772602979">
+                      <div class="main-search-form-validation">Select your Check-In date</div>
+                  </li>
+                  <li class="column search-field-wrap form-field-wrap checkout">
+                      <input name="checkout" readonly="true" placeholder="Check-out" autocomplete="off" type="text" class="hasDatepicker" val="" id="dp1505772602980">
+                      <div class="main-search-form-validation">Select your Check-out date</div>
+                  </li>
+                  <li class="column search-field-wrap rooms">
+                      <div tabindex="0" class="passenger-toggle search-dropdown-toggle" data-dropdown="hotel-rooms">
+                          <span id="num-guests" class="num-rooms" data-passengers="1">1</span> <span>Room(s)</span>
+                          <i class="fa fa-chevron-down"></i>
+                          <div style="background:#fff;" class="search-dropdown hotel-rooms" id="hotel-rooms">
+                              <div class="passenger-type display-table">
+                                  <div class="pass-left column label">Rooms</div>
+                                  <div class="pass-right column picker">
+                                      <div class="passenger-picker">
+                                          <input type="hidden" class="passengerType" name="no_rooms" data-field-min="1" data-field-limit="30" data-field-id="no_rooms" value="1">
+                                          <div class="display-table picker-wrapper">
+                                              <div class="column picker-button remove disabled">
+                                                  <i class="fa fa-minus"></i>
+                                              </div>
+                                              <div class="column qty">
+                                                  <span id="no_rooms">1</span>
+                                              </div>
+                                              <div class="column picker-button add">
+                                                  <i class="fa fa-plus"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="passenger-type display-table">
+                                  <div class="pass-left column label">Adults</div>
+                                  <div class="pass-right column picker">
+                                      <div class="passenger-picker">
+                                          <input type="hidden" class="passengerType" name="group_adults" data-field-min="1" data-field-limit="30" data-field-id="group_adults" value="2">
+                                          <div class="display-table picker-wrapper">
+                                              <div class="column picker-button remove">
+                                                  <i class="fa fa-minus"></i>
+                                              </div>
+                                              <div class="column qty">
+                                                  <span id="group_adults">2</span>
+                                              </div>
+                                              <div class="column picker-button add">
+                                                  <i class="fa fa-plus"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="passenger-type display-table">
+                                  <div class="pass-left column label">Children</div>
+                                  <div class="pass-right column picker">
+                                      <div class="passenger-picker">
+                                          <input type="hidden" class="passengerType" name="group_children" data-field-min="0" data-field-limit="10" data-field-id="group_children" value="0">
+                                          <div class="display-table picker-wrapper">
+                                              <div class="column picker-button remove disabled">
+                                                  <i class="fa fa-minus"></i>
+                                              </div>
+                                              <div class="column qty">
+                                                  <span id="group_children">0</span>
+                                              </div>
+                                              <div class="column picker-button add">
+                                                  <i class="fa fa-plus"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="close-passenger-picker">Done</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="column search-field-wrap submit">
+                      <button id="hotel_search_button">Search Hotels</button>
+                  </li>
+              </ul>
+            </form>        
+          </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="row background_image">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabContent" id="tabs-1">
 		<span class="hotel_heading">NEED A PLACE TO STAY?</span><br />
 		<span class="hotel_subtitle">Hotelspop offers thousands of hotel accommodations worldwide with no booking fees!</span>
@@ -18,7 +421,7 @@
         		<input type="text" name="searchBar" class="search-query form-control" placeholder="&#xf041; Select a city, airport or landmark"/>
       	</div>
       </div>
-</div>
+</div> -->
 <div class="row rating_section">
 	Hotelspop customer satisfaction
 	<i class="fa fa-star" aria-hidden="true"></i>
@@ -62,7 +465,7 @@
 
   <div class="container">
     <div class="row img_div">
-      <div class="col-md-12">
+      <div class="col-md-12 inside_img_div">
           <div class="col-md-6">
 
             <div class="col-md-12 img_bottom_margin">
@@ -75,61 +478,59 @@
             </div>
 
             <div class="col-md-12 img_bottom_margin">
-                <a href="">
-                  <img class="img-responsive img-rounded" src="/assets/cancun.jpg" alt="">
-                  <div class='description'>
-                    <p class='description_content'>Washington to Cancun</p>
-                  </div>
-                </a>
+              <%= link_to root_url do %>
+                <%= image_tag "cancun.jpg", :class => "img-responsive img-rounded" %>
+                <div class='description'>
+                  <p class='description_content'>Washington to Cancun</p>
+                </div>
+              <% end %>
             </div>
 
             <div class="col-md-12 img_bottom_margin">
-                  <a href="">
-                    <img class="img-responsive img-rounded" src="/assets/delhi.jpg" alt=""> 
-                    <div class='description'>
-                      <p class='description_content'>Washington to Dehli</p>
-                    </div>
-                  </a>
+              <%= link_to root_url do %>
+                <%= image_tag "delhi.jpg", :class => "img-responsive img-rounded" %>
+                <div class='description'>
+                  <p class='description_content'>Washington to Delhi</p>
+                </div>
+              <% end %>
             </div>
+        </div>
 
-          </div>
-
-          <div class="col-md-6">
-            
+        <div class="col-md-6">
             <div class="col-md-12 img_bottom_margin">
-                <a href="">
-                  <img class="img-responsive img-rounded" src="/assets/chicago.jpg" alt="">
-                  <div class='description'>
-                    <p class='description_content'>Washington to Chicago</p>
-                  </div>
-                </a>
-            </div>
-
-            <div class="col-md-12 img_bottom_margin">
-    	          <a href="">
-    	          	<img class="img-responsive img-rounded" src="/assets/los-angeles.jpg" alt="">
-    	          	<div class='description'>
-        						<p class='description_content'>Washington to Los-Angeles</p>
-    					   </div>
-    				    </a>
+              <%= link_to root_url do %>
+                <%= image_tag "chicago.jpg", :class => "img-responsive img-rounded" %>
+                <div class='description'>
+                  <p class='description_content'>Washington to Chicago</p>
+                </div>
+              <% end %>
             </div>
 
             <div class="col-md-12 img_bottom_margin">
-    	          <a href="">
-    	          	<img class="img-responsive img-rounded" src="/assets/las-vegas.jpg" alt="">
-    	          	<div class='description'>
-      						  <p class='description_content'>Washington to Las-Vegas</p>
-    	 				    </div>
-    				    </a>
+              <%= link_to root_url do %>
+                <%= image_tag "los-angeles.jpg", :class => "img-responsive img-rounded" %>
+                <div class='description'>
+                  <p class='description_content'>Washington to Los-Angeles</p>
+                </div>
+              <% end %>
             </div>
 
             <div class="col-md-12 img_bottom_margin">
-    	          <a href="">
-    	          		<img class="img-responsive img-rounded" src="/assets/lima.jpg" alt=""> 
-    	          		<div class='description'>
-          						<p class='description_content'>Washington to Lima</p>
-    			     		  </div>
-    				    </a>
+              <%= link_to root_url do %>
+                <%= image_tag "las-vegas.jpg", :class => "img-responsive img-rounded" %>
+                <div class='description'>
+                  <p class='description_content'>Washington to Las-Vegas</p>
+                </div>
+              <% end %>
+            </div>
+
+            <div class="col-md-12 img_bottom_margin">
+              <%= link_to root_url do %>
+                <%= image_tag "lima.jpg", :class => "img-responsive img-rounded" %>
+                <div class='description'>
+                  <p class='description_content'>Washington to Lima</p>
+                </div>
+              <% end %>
             </div>
 
           </div>   
