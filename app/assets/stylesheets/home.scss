@@ -1,5 +1,5 @@
 .background_image{
-	background: image-url('beach.jpg');
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url('beach.jpg');
 	height: 350px;
 	background-size:100% auto;
 	color: white;
@@ -599,6 +599,13 @@ clearfix:after {
 
 .item-hotels-search.before-recent-searches {
     margin-bottom: 3px;
+}
+
+.has-icons .form-field-wrap.destination:before {
+    font-family: Fontawesome;
+    content: '\f041';
+    top: 18px;
+    font-size: 15px;
 }
 
 @media screen and (min-width: 876px){

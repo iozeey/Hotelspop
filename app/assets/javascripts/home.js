@@ -1,3 +1,28 @@
+function flightFunction() {
+    document.getElementById("hotel").style.display = "none";
+    document.getElementById("hotel-search-form").style.display = "none";
+    document.getElementById("flight").style.display = "block";
+    document.getElementById("flightForm").style.display = "block";
+    var flight_Tab = document.getElementById("flightTab");
+    var hotel_Tab = document.getElementById("hotelTab");
+    flight_Tab.className+= " active";
+    hotel_Tab.classList.remove('active');
+}
+
+function hotelFunction() {
+    document.getElementById("flight").style.display = "none";
+    document.getElementById("flightForm").style.display = "none"
+    document.getElementById("hotel").style.display = "block";
+    document.getElementById("hotel-search-form").style.display = "block";
+    var flight_Tab = document.getElementById("flightTab");
+    var hotel_Tab = document.getElementById("hotelTab");
+    hotel_Tab.className+= " active";
+    flight_Tab.classList.remove('active');
+}
+
+function flightRoute(){
+
+}
 
 (function() {
     var el; // All elements used by this module

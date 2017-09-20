@@ -16,3 +16,4 @@
 //= require fecha
 //= require partial_views
 //= require home
+//= require datepicker

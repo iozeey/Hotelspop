@@ -1,7 +1,7 @@
 
 <div class="hp-photo-wrap">
     <div class="hp-form-wrap general-container">
-        <div class="hp-slogan flights" data-tab-text="search-flights">
+        <div class="hp-slogan flights" id="flight" style="display: none" data-tab-text="search-flights">
             <span class="main">Find <strong>Cheap Flights</strong>
                 <span class="mobile-break">and <strong>Save</strong></span>
             </span>
@@ -9,7 +9,7 @@
                 <strong>Search</strong> and <strong>Compare</strong> our best deals with over 440+ airlines - <strong>Book now!</strong>
             </div>
         </div>
-        <div class="hp-slogan hotels" data-tab-text="search-hotels">
+        <div class="hp-slogan hotels" id="hotel" data-tab-text="search-hotels">
             <span class="main"><strong>Need a place to stay?</strong></span>
             <div class="slogan-subtitle">
                 Hotelspop offers <strong>thousands of hotel accommodations</strong> worldwide with <strong>no booking fees!</strong>
@@ -18,25 +18,25 @@
         
         <div class="search-form-selection">
             <div class="search-selection-tabs">
-                <div class="search-selection-tab flights" data-tab="search-flights">
+                <div class="search-selection-tab flights" id="flightTab" onclick="flightFunction()" data-tab="search-flights">
                     <span class="jf-icon jf-plane"></span><span>Flights</span>
                 </div>
-                <div class="search-selection-tab hotels active" data-tab="search-hotels">
+                <div class="search-selection-tab hotels active" id="hotelTab" onclick="hotelFunction()" data-tab="search-hotels">
                     <span class="jf-icon jf-building"></span><span>Hotels</span>
                 </div>
             </div>
             
             <div class="search-selection-wrap home-page">
-                <form name="air_search_form" action="/flight/search" method="get" class="inline-search-form-form main-search-form has-icons" autocomplete="off" data-tab-target="search-flights" data-selected-currency="USD" data-hotels-search="true">
+                <form name="air_search_form" action="" method="get" class="inline-search-form-form main-search-form has-icons" style="display: none" id="flightForm" data-tab-target="search-flights" data-selected-currency="USD" data-hotels-search="true">
                 <input type="hidden" name="new_search" value="1">
 
                 <div class="inline-search-form form-wrap-roundtrip" id="inline-search-form-1">
                     <div class="form-filters-wrap flight-type clearfix">
                         <div class="form-filters-left">
                             <ul class="clearfix inline-search-form-mode">
-                                <li class="item"><a href="" id="toggle-roundtrip" class="active search-type-toggle" rel="roundtrip">Round Trip</a></li>
-                                <li class="item"><a href="" id="toggle-oneway" class=" search-type-toggle" rel="oneway">One Way</a></li>
-                                <li class="item"><a href="" id="toggle-multi" class=" search-type-toggle" rel="multi">Multi-City</a></li>
+                                <li class="item"><a href="#" id="toggle-roundtrip" class="active search-type-toggle" rel="roundtrip">Round Trip</a></li>
+                                <li class="item"><a href="#" id="toggle-oneway" class=" search-type-toggle" rel="oneway">One Way</a></li>
+                                <li class="item"><a href="#" id="toggle-multi" class=" search-type-toggle" rel="multi">Multi-City</a></li>
                             </ul>
                         </div>
                     </div>
@@ -45,25 +45,30 @@
                         <div class="column inputs">
                             <div class="form-fields-wrap clearfix">
                                 <div class="form-field-wrap form-field-from">
-                                    <input type="text" name="seg0_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
+                                    <input type="text" name="seg0_from" placeholder="Leaving from" class="airport-related" value="">
                                     <input type="hidden" name="seg0_from_code" value="">
                                 </div>
 
                                 <div class="form-field-wrap form-field-to">
-                                    <input type="text" name="seg0_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
+                                    <input type="text" name="seg0_to" placeholder="Going to" class="airport-related" value="">
                                     <input type="hidden" name="seg0_to_code" value="">
                                 </div>
 
                                 <div class="form-field-wrap form-field-from-date">
-                                    <input readonly="true" type="text" name="seg0_date" placeholder="Departing" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602981">
+                                    <input readonly="true" type="text" name="seg0_date" placeholder="Departing" class="date-field-from hasDatepicker startflightDate" value="" id="dp1505772602981">
                                 </div>
 
                                 <div class="form-field-wrap form-field-to-date">
-                                    <input readonly="true" type="text" name="seg1_date" placeholder="Returning" autocomplete="off" class="date-field-to hasDatepicker" value="" id="dp1505772602982">
+                                    <input readonly="true" type="text" name="seg1_date" placeholder="Returning" class="date-field-to hasDatepicker endflightDate" value="" id="dp1505772602982">
                                 </div>
-                                
+                                <script type="text/javascript">
+                                  var flightDatePicker = new datePicker({
+                                      start:  document.getElementsByClassName('startflightDate'),
+                                      end:    document.getElementsByClassName('endflightDate'),
+                                      months: 2,
+                                  });
+                                </script>
                                 <div id="multi-city-wrapper" class="multi-city-wrapper mobile-only"></div>
-
                             </div>
                             
                             <div class="form-fields-wrap-multi-container">
@@ -71,7 +76,6 @@
                                     <div style="overflow:hidden;">
                                         <div class="form-field-wrap form-field-from">
                                             <input type="text" name="seg1_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
-
                                             <input type="hidden" name="seg1_from_code" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-to">
@@ -305,7 +309,7 @@
                     </div>
                 </div>
             </form>
-            <form action="/hotel/searchresults?label=hotel_tab" class="main-search-form has-icons hotels" id="hotel-search-form" method="get" data-tab-target="search-hotels">
+            <form action="" class="main-search-form has-icons hotels" id="hotel-search-form" method="get" data-tab-target="search-hotels">
               <div class="input-wrap">
                   <input type="hidden" name="selected_currency" value="USD">
                   <input type="hidden" name="dest_id" value="">
@@ -318,13 +322,20 @@
                       <div class="main-search-form-validation">Please type a destination</div>
                   </li>
                   <li class="column search-field-wrap form-field-wrap checkin">
-                      <input name="checkin" readonly="true" placeholder="Check-in" autocomplete="off" type="text" class="hasDatepicker" val="" id="dp1505772602979">
+                      <input name="checkin" readonly="true" placeholder="Check-in" autocomplete="off" type="text" class="hasDatepicker startDate" val="" id="dp1505772602979">
                       <div class="main-search-form-validation">Select your Check-In date</div>
                   </li>
                   <li class="column search-field-wrap form-field-wrap checkout">
-                      <input name="checkout" readonly="true" placeholder="Check-out" autocomplete="off" type="text" class="hasDatepicker" val="" id="dp1505772602980">
+                      <input name="checkout" readonly="true" placeholder="Check-out" autocomplete="off" type="text" class="hasDatepicker endDate" val="" id="dp1505772602980">
                       <div class="main-search-form-validation">Select your Check-out date</div>
                   </li>
+                  <script type="text/javascript">
+                    var tripDatePicker = new datePicker({
+                        start:  document.getElementsByClassName('startDate'),
+                        end:    document.getElementsByClassName('endDate'),
+                        months: 2,
+                    });
+                  </script>
                   <li class="column search-field-wrap rooms">
                       <div tabindex="0" class="passenger-toggle search-dropdown-toggle" data-dropdown="hotel-rooms">
                           <span id="num-guests" class="num-rooms" data-passengers="1">1</span> <span>Room(s)</span>
@@ -401,27 +412,6 @@
     </div>
 </div>
 
-<!-- <div class="row background_image">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabContent" id="tabs-1">
-		<span class="hotel_heading">NEED A PLACE TO STAY?</span><br />
-		<span class="hotel_subtitle">Hotelspop offers thousands of hotel accommodations worldwide with no booking fees!</span>
-	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabContent" id="tabs-2">
-		<span class="hotel_heading">FIND CHEAP FLIGHTS AND SAVE</span><br />
-		<span class="hotel_subtitle">Search and Compare our best deals with over 440+ airlines - Book now!</span>
-	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom_border">
-		<ul class="nav nav-pills">
-			<li class="active tab_heading" id="tabs2" onclick="showStuff(this)"><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>FLIGHTS</a></li>
-			<li class="active tab_heading" id="tabs1" onclick="showStuff(this)"><a href="#"><i class="fa fa-building-o" aria-hidden="true"></i>HOTELS</a></li>
-		</ul>
-	</div>
-	<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" id="tabs-1">
-      	<div id="custom-search-input" class="SearchMargin">
-        		<input type="text" name="searchBar" class="search-query form-control" placeholder="&#xf041; Select a city, airport or landmark"/>
-      	</div>
-      </div>
-</div> -->
 <div class="row rating_section">
 	Hotelspop customer satisfaction
 	<i class="fa fa-star" aria-hidden="true"></i>
