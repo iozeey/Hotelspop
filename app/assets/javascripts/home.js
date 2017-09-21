@@ -9,6 +9,16 @@ $( document ).ready(function() {
         e.stopPropagation();
     });
 
+    $(".inline-search-form-add-segment-container").click(function(){
+        $("#inline-search-form-segment-2").show();
+        $(".inline-search-form-remove-segment").show();
+    });
+    
+    $(".inline-search-form-remove-segment-container").click(function(){
+        $("#inline-search-form-segment-2").hide();
+        $(".inline-search-form-remove-segment").hide();
+    });
+
    // Function for selecting Packages
    $( "select" )
     .change(function() {
@@ -50,7 +60,9 @@ function hotelFunction() {
 
 function roundTrip(){
     document.getElementById("inline-search-form-segment-1").style.display = "none";
-    // document.getElementById("dp1505772602982").style.display = "block";
+    document.getElementById("dp1505772602982").style.display = "block";
+    document.getElementById("111").style.width = "30%";
+    document.getElementById("112").style.width = "30%";
     var rTrip = document.getElementById("toggle-roundtrip");
     var mTrip = document.getElementById("toggle-multi");
     var oTrip = document.getElementById("toggle-oneway");
@@ -61,7 +73,9 @@ function roundTrip(){
 
 function oneWay(){
     document.getElementById("inline-search-form-segment-1").style.display = "none";
-    // document.getElementById("dp1505772602982").style.display = "none";
+    document.getElementById("dp1505772602982").style.display = "none";
+    document.getElementById("111").style.width = "40%";
+    document.getElementById("112").style.width = "40%";
     var mTrip = document.getElementById("toggle-multi");
     var rTrip = document.getElementById("toggle-roundtrip");
     var oTrip = document.getElementById("toggle-oneway");
@@ -72,7 +86,9 @@ function oneWay(){
 
 function multiTrip(){
     document.getElementById("inline-search-form-segment-1").style.display = "block";
-    // document.getElementById("dp1505772602981").style.display = "block";
+    document.getElementById("dp1505772602982").style.display = "none";
+    document.getElementById("111").style.width = "40%";
+    document.getElementById("112").style.width = "40%";
     var rTrip = document.getElementById("toggle-roundtrip");
     var oTrip = document.getElementById("toggle-oneway");
     var mTrip = document.getElementById("toggle-multi");
