@@ -12,8 +12,6 @@
 //
 //= require jquery.min
 //= require bootstrap-sprockets
-// require hotel-datepicker
-// require fecha
+//= require datepicker
 //= require partial_views
 //= require home
-//= require datepicker
