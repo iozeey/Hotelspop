@@ -2,17 +2,29 @@ $( document ).ready(function() {
    $("#room_dropdown").click(function(e){
         $(".search-dropdown").show();
         e.stopPropagation();
-   });
+    });
 
    $("#passengers_dropdown").click(function(e){
-    $(".search-dropdown").show();
+        $(".search-dropdown").show();
         e.stopPropagation();
-   });
+    });
+
+   // Function for selecting Packages
+   $( "select" )
+    .change(function() {
+    var str = "";
+    $( "select option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+        $( ".select-first-text" ).text( str );
+    })
+    .trigger( "change" );
+    //function ended.
 });
 
 $(document).click(function(){
-        $(".search-dropdown").hide();
-    });
+    $(".search-dropdown").hide();
+});
 
 function flightFunction() {
     document.getElementById("hotel").style.display = "none";

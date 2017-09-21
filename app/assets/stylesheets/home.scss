@@ -607,6 +607,7 @@ clearfix:after {
     left: 0;
     right: 0;
     top: 0;
+    color: black;
     bottom: 0;
     height: 100%;
     min-width: 100%;
@@ -632,7 +633,7 @@ clearfix:after {
 .form-field-segment {
     position: absolute;
     width: 265px;
-    right: -265px;
+    right: -95px;
     top: 50%;
     margin-top: -13px;
     text-align: left;
@@ -651,20 +652,34 @@ clearfix:after {
     text-align: center;
     cursor: pointer;
 }
+
+.form-field-segment .inline-search-form-remove-segment {
+    display: none;
+}
 @media screen and (min-width: 876px){
-	.item-hotels-search.after-recent-searches {
-	    display: none;
-	}
+    .item-hotels-search.after-recent-searches {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 876px){
-	.item-hotels-search.before-recent-searches {
-	    display: none;
-	}
+    .item-hotels-search.before-recent-searches {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1161px){
-	.home .inline-search-form .column.search {
-	    width: 360px;
-	}
+    .home .inline-search-form .column.search {
+        width: 360px;
+    }
 }
+@media only screen and (max-width: 1050px){
+    .form-wrap-oneway .form-field-to, .form-wrap-oneway .form-field-from, .form-wrap-multi .form-field-to, .form-wrap-multi .form-field-from, .form-field-to, .form-field-from, .form-field-to-date, .form-field-from-date {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .form-wrap-multi .form-field-to, .form-wrap-multi .form-field-from, .form-fields-wrap-multi-container .form-field-to, .form-fields-wrap-multi-container .form-field-from, .form-wrap-oneway .form-field-to, .form-wrap-oneway .form-field-from, .main-search-form .search-field-wrap.submit, .main-search-form .search-field-wrap.rooms, .main-search-form .search-field-wrap.checkin, .main-search-form .search-field-wrap.checkout, .form-field-passengers, .form-field-button, .form-field-to, .form-field-from, .form-field-to-date, .form-field-from-date {
+        width: 100%;
+    }
+}   

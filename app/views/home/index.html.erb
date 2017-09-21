@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div class="hp-photo-wrap">
     <div class="hp-form-wrap general-container">
@@ -82,9 +83,15 @@
                                             <input type="hidden" name="seg1_to_code" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg1_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602983">
+                                            <input readonly="true" type="text" name="seg1_date" placeholder="Date" autocomplete="off" class="date-field-from startflightDateMulti" value="" id="dp1505772602983">
                                         </div>
                                     </div>
+                                    <!-- <script type="text/javascript">
+                                        var flightDatePickerMulti = new datePicker({
+                                          start:  document.getElementsByClassName('startflightDateMulti'),
+                                          months: 2,
+                                        });
+                                    </script> -->
                                     <div class="form-field-segment">
                                         <div class="inline-search-form-add-segment-container">
                                             <a href="#" class="multicity-btn inline-search-form-add-segment">+ Add segment</a>
@@ -262,7 +269,7 @@
                                                   </div>
                                               </div>
                                           </div>
-                                          <div class="close-passenger-picker">Done</div>
+                                          <div class="close-passenger-picker" id="close_div">Done</div>
                                       </div>
                                   </div>
                             </div>
@@ -276,10 +283,10 @@
 
                     <div class="form-filters-wrap clearfix flight-class">
                         <div class="form-filters-left">
-                            <ul class="filter-list">
+                            <ul class="filter-list" style="padding-left: 0px">
                                 <li class="item">
                                     <a class="select-wrapper" rel="seat_class">
-                                      <span class="select-first-text" rel="seat_class">Economy</span>
+                                      <span class="select-first-text" rel="seat_class"></span>
                                       <i class="select-down-arrow fa fa-chevron-down"></i>
                                       <select name="seat_class" class="text styled-select">
                                           <option value="Economy" selected="">Economy</option>
@@ -315,7 +322,7 @@
                   <input type="hidden" name="dest_type" value="">
                   <input type="hidden" name="label" value="hotel_tab">
               </div>
-              <ul class="display-table main-search-form-field-wrap">
+              <ul class="display-table main-search-form-field-wrap" style="padding-left: 0px">
                   <li class="column search-field-wrap form-field-wrap destination">
                       <input id="hotel_autocomplete" name="ss" placeholder="Select a city, airport or landmark" autocomplete="off" type="text" class="airport-related ui-autocomplete-input">
                       <div class="main-search-form-validation">Please type a destination</div>
@@ -397,7 +404,7 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="close-passenger-picker">Done</div>
+                              <div class="close-passenger-picker" id="close_div">Done</div>
                           </div>
                       </div>
                   </li>
