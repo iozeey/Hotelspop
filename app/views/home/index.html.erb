@@ -15,7 +15,6 @@
                 Hotelspop offers <strong>thousands of hotel accommodations</strong> worldwide with <strong>no booking fees!</strong>
             </div>
         </div>
-        
         <div class="search-form-selection">
             <div class="search-selection-tabs">
                 <div class="search-selection-tab flights" id="flightTab" onclick="flightFunction()" data-tab="search-flights">
@@ -34,9 +33,9 @@
                     <div class="form-filters-wrap flight-type clearfix">
                         <div class="form-filters-left">
                             <ul class="clearfix inline-search-form-mode">
-                                <li class="item"><a href="#" id="toggle-roundtrip" class="active search-type-toggle" rel="roundtrip">Round Trip</a></li>
-                                <li class="item"><a href="#" id="toggle-oneway" class=" search-type-toggle" rel="oneway">One Way</a></li>
-                                <li class="item"><a href="#" id="toggle-multi" class=" search-type-toggle" rel="multi">Multi-City</a></li>
+                                <li class="item"><a href="#" id="toggle-roundtrip" onclick="roundTrip()" class="active search-type-toggle" rel="roundtrip">Round Trip</a></li>
+                                <li class="item"><a href="#" id="toggle-oneway" class="search-type-toggle" onclick="oneWay()" rel="oneway">One Way</a></li>
+                                <li class="item"><a href="#" id="toggle-multi" onclick="multiTrip()" class="search-type-toggle" rel="multi">Multi-City</a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,10 +87,10 @@
                                     </div>
                                     <div class="form-field-segment">
                                         <div class="inline-search-form-add-segment-container">
-                                            <a href="" class="multicity-btn inline-search-form-add-segment">+ Add segment</a>
+                                            <a href="#" class="multicity-btn inline-search-form-add-segment">+ Add segment</a>
                                         </div>
                                         <div class="inline-search-form-remove-segment-container">
-                                            <a href="" class="multicity-btn inline-search-form-remove-segment">- Remove</a>
+                                            <a href="#" class="multicity-btn inline-search-form-remove-segment">- Remove</a>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +169,7 @@
                             <input type="hidden" name="type" value="roundtrip">
                         </div>
                         <div class="column search"> 
-                            <div class="form-field-passengers">
+                            <div class="form-field-passengers" id="passengers_dropdown">
                                 <div class="passenger-toggle-wrap">
                                     <div tabindex="0" class="passenger-toggle search-dropdown-toggle" data-dropdown="passengers">
                                         <span id="num-passengers" class="num-passengers" data-passengers="1">1</span> <span>Passenger(s)</span>
@@ -336,7 +335,7 @@
                         months: 2,
                     });
                   </script>
-                  <li class="column search-field-wrap rooms">
+                  <li class="column search-field-wrap rooms"  id="room_dropdown">
                       <div tabindex="0" class="passenger-toggle search-dropdown-toggle" data-dropdown="hotel-rooms">
                           <span id="num-guests" class="num-rooms" data-passengers="1">1</span> <span>Room(s)</span>
                           <i class="fa fa-chevron-down"></i>
