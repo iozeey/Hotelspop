@@ -1,6 +1,7 @@
 .background_image{
 	background: image-url('beach.jpg');
-	height: 350px;
+	opacity: 0.5;
+    height: 350px;
 	background-size:100% auto;
 	color: white;
 	padding-left: 5%;
@@ -106,6 +107,7 @@
 	margin-left: 4%;
 	margin-top: 2%;
 	margin-right: 4%;
+    margin-bottom: 7%;
 }
 .tabContent {
     display:none;
@@ -156,7 +158,7 @@ p.description_content{
 }
 /* copied content started */
 .hp-photo-wrap {
-    background: image-url('beach.jpg') no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('beach.jpg') no-repeat center;
     background-size: cover;
     background-color: #f5f5f5;
     padding: 30px 0 40px 0;
@@ -323,10 +325,6 @@ ol, ul {
 .inline-search-form .table-wrap > .column {
     vertical-align: top;
 }
-.has-icons .form-field-from:before {
-    content: "\64";
-    font-size: 14px;
-}
 .has-icons .mobile-calendar-toggle:before, .has-icons .search-field-wrap.checkout:before, .has-icons .search-field-wrap.checkin:before, .has-icons .form-field-wrap:before, .has-icons .passenger-toggle:before{
 	color: #b9b9b9;
     font-family: "jf-dashboard";
@@ -339,6 +337,26 @@ ol, ul {
     top: 20px;
     left: 12px;
     pointer-events: none;
+}
+.has-icons .form-field-from:before {
+    font-family: Fontawesome;
+    content: "\f072";
+    font-size: 14px;
+}
+.has-icons .form-field-to:before {
+    font-family: Fontawesome;
+    content: "\f072";
+    font-size: 14px;
+}
+.has-icons .mobile-calendar-toggle:before, .has-icons .search-field-wrap.checkout:before, .has-icons .search-field-wrap.checkin:before, .has-icons .form-field-from-date:before, .has-icons .form-field-to-date:before {
+    font-family: Fontawesome;
+    content: "\f073";
+    font-size: 14px;
+}
+.has-icons .passenger-toggle:before {
+    font-family: Fontawesome;
+    content: "\f007";
+    font-size: 12px;
 }
 .form-fields-wrap, .form-fields-wrap-multi {
     position: relative;
@@ -552,6 +570,9 @@ clearfix:after {
     padding: 0;
 }
 
+.form-wrap-oneway .form-field-to, .form-wrap-oneway .form-field-from, .form-wrap-multi .form-field-to, .form-wrap-multi .form-field-from {
+    width: 40%;
+}
 .home.index .home-page-recent-items-title, .home.index .form-field-segment .multicity-btn, .home.index .item-hotels-search input[type=checkbox] + label, .home.index .flight-class .item a, .home.index .flight-type .item a, .home.index .search-selection-tab {
     text-shadow: 0 1px 1px rgba(0,0,0,.2);
 }
@@ -586,6 +607,7 @@ clearfix:after {
     left: 0;
     right: 0;
     top: 0;
+    color: black;
     bottom: 0;
     height: 100%;
     min-width: 100%;
@@ -601,20 +623,63 @@ clearfix:after {
     margin-bottom: 3px;
 }
 
+.has-icons .form-field-wrap.destination:before {
+    font-family: Fontawesome;
+    content: '\f041';
+    top: 18px;
+    font-size: 15px;
+}
+
+.form-field-segment {
+    position: absolute;
+    width: 265px;
+    right: -95px;
+    top: 50%;
+    margin-top: -13px;
+    text-align: left;
+}
+.inline-search-form-remove-segment-container, .inline-search-form-add-segment-container {
+    display: inline-block;
+}
+.form-field-segment .multicity-btn {
+    color: #fff;
+    display: block;
+    margin-left: 15px;
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-field-segment .inline-search-form-remove-segment {
+    display: none;
+}
 @media screen and (min-width: 876px){
-	.item-hotels-search.after-recent-searches {
-	    display: none;
-	}
+    .item-hotels-search.after-recent-searches {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 876px){
-	.item-hotels-search.before-recent-searches {
-	    display: none;
-	}
+    .item-hotels-search.before-recent-searches {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1161px){
-	.home .inline-search-form .column.search {
-	    width: 360px;
-	}
+    .home .inline-search-form .column.search {
+        width: 360px;
+    }
 }
+@media only screen and (max-width: 1050px){
+    .form-wrap-oneway .form-field-to, .form-wrap-oneway .form-field-from, .form-wrap-multi .form-field-to, .form-wrap-multi .form-field-from, .form-field-to, .form-field-from, .form-field-to-date, .form-field-from-date {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .form-wrap-multi .form-field-to, .form-wrap-multi .form-field-from, .form-fields-wrap-multi-container .form-field-to, .form-fields-wrap-multi-container .form-field-from, .form-wrap-oneway .form-field-to, .form-wrap-oneway .form-field-from, .main-search-form .search-field-wrap.submit, .main-search-form .search-field-wrap.rooms, .main-search-form .search-field-wrap.checkin, .main-search-form .search-field-wrap.checkout, .form-field-passengers, .form-field-button, .form-field-to, .form-field-from, .form-field-to-date, .form-field-from-date {
+        width: 100%;
+    }
+}   

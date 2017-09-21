@@ -1,0 +1,91 @@
+body {
+    font-family: inherit;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 10px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+h4, .h4 {
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px dotted darkgrey;
+    padding-bottom: 4px;
+    padding-top: 3px;
+}
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 6px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    font-size: 13px;
+    border-top: none;
+}
+.table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+    font-weight: bold;
+}
+p {
+  margin: 0 0 0px;
+  margin-top: -10px;
+}
+
+/* Component CSS */
+
+.calendar{
+    background: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 9;
+}
+
+.calendar > div {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.calendar.hidden{
+    display: none;
+}
+
+.calendar .navWrapper > span {
+    cursor: pointer;
+}
+
+.calendar .month > table td.active{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.calendar .month > table td:hover{
+    background-color: #F5F5F5;
+}
+
+.calendar .month > table td.selected{
+    background-color: #64A04D;
+}
+
+.calendar .month > table td.disabled{
+    opacity: 0.7;
+    text-decoration: line-through;
+    cursor: default;
+    color: #888;
+}
+
+.calendar .closeWidget{
+    display: block;
+    text-align: right;
+    font-size: 12px;
+}
+
+.calendar .closeWidget p{
+    cursor: pointer;
+}
