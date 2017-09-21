@@ -57,3 +57,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gem for Font-Awesome Icaons
 gem "font-awesome-rails"
+
+# added to compile assests on heroku 
+group :production do
+  gem 'rails_12factor'
+end
