@@ -656,17 +656,6 @@ clearfix:after {
 .form-field-segment .inline-search-form-remove-segment {
     display: none;
 }
-@media screen and (min-width: 876px){
-    .item-hotels-search.after-recent-searches {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 876px){
-    .item-hotels-search.before-recent-searches {
-        display: none;
-    }
-}
 
 @media only screen and (min-width: 1161px){
     .home .inline-search-form .column.search {
@@ -677,9 +666,177 @@ clearfix:after {
     .form-wrap-oneway .form-field-to, .form-wrap-oneway .form-field-from, .form-wrap-multi .form-field-to, .form-wrap-multi .form-field-from, .form-field-to, .form-field-from, .form-field-to-date, .form-field-from-date {
         width: 50%;
     }
+    .hp-slogan {
+        text-align: center;
+    }
+    .search-selection-tabs {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .hotels.main-search-form {
+        margin-bottom: 20px;
+    }
+    .inline-search-form .table-wrap > .column {
+        display: block;
+    }
+    .mobile-calendar-toggle, .main-search-form input:not([type=checkbox]) {
+        border-bottom: 0;
+    }
+    .mobile-only {
+        display: block !important;
+    }
+    .form-field-segment {
+        position: static;
+        width: auto;
+        right: auto;
+        top: auto;
+        margin: 0;
+        overflow: hidden;
+    }
+    .inline-search-form-remove-segment-container, .inline-search-form-add-segment-container {
+        float: left;
+        padding-right: 10px;
+    }
+    .inline-search-form .column.search {
+        width: auto;
+    }
+    .inline-search-form .table-wrap > .column {
+        display: block;
+    }
+    .main-search-form .form-wrap-multi .passenger-toggle {
+        border-radius: 2px 0 0 2px;
+    }
+    .main-search-form-field-wrap > .column {
+        display: inline-block;
+        font-size: 14px;
+        width: 100%;
+    }
+    .main-search-form .search-field-wrap.checkin, .main-search-form .search-field-wrap.checkout {
+        width: 50%;
+    }
+    .form-field-wrap.destination {
+        width: 100%;
+    }
+    .main-search-form-field-wrap {
+        display: block;
+        font-size: 0;
+    }
+    .main-search-form .search-field-wrap.submit, .main-search-form .search-field-wrap.rooms {
+        width: 100%;
+    }
+    .search-dropdown-toggle.passenger-toggle {
+        position: static;
+    }
+    .main-search-form .passenger-toggle {
+        border-radius: 0 0 0 2px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .hp-photo-wrap {
+        padding: 25px 15px;
+    }
+    .hp-form-wrap.general-container {
+        max-width: 530px;
+    }
+    .hp-slogan {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 875px){
+    .hp-slogan {
+        text-align: center;
+        font-size: 22px;
+        margin: 0 0 20px 0;
+    }
+    .hotel-container{
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .hp-photo-wrap {
+        padding: 15px;
+    }
+    .hp-slogan {
+        margin-bottom: 10px;
+    }
 }
 @media only screen and (max-width: 500px){
+    .hp-photo-wrap {
+        padding: 0;
+        background: none;
+    }
+    .hp-form-wrap.general-container {
+        width: 100%;
+    }
+    .hp-slogan {
+        display: none !important;
+        position: absolute;
+        visibility: hidden;
+    }
+    .home.index .home-page-recent-items-title, .home.index .form-field-segment .multicity-btn, .home.index .item-hotels-search input[type=checkbox] + label, .home.index .flight-class .item a, .home.index .flight-type .item a, .home.index .search-selection-tab {
+        text-shadow: none !important;
+    }
+    .search-selection-tab.active {
+        color: #455d88 !important;
+    }
+    .search-selection-tabs {
+        border-bottom: 1px dashed #e5e5e5;
+        background: #f5f5f5;
+        padding: 3px 0;
+        margin: 0;
+    }
+    .search-selection-tab {
+        padding: 12px;
+        border: 0;
+    }
+    .form-field-segment .multicity-btn, .item-hotels-search input[type=checkbox] + label, .search-selection-tab, .flight-type .item a {
+        font-size: 12px;
+    }
+    .form-field-segment .multicity-btn, .search-selection-tab, .item-hotels-search input[type=checkbox] + label, .flight-class .item a, .flight-type .item a {
+       color: #444 !important;
+    }
+    .search-selection-wrap.home-page {
+        padding: 0 20px;
+    }
+    .search-selection-wrap.home-page .hotels {
+        padding-top: 10px;
+    }
+    .form-filters-wrap.flight-type {
+        border-bottom: 1px dashed #e5e5e5;
+        margin: 0 0 10px 0;
+        padding-bottom: 5px;
+    }
+    .flight-type ul {
+        margin: 0 0 10px 0;
+    }
+    .flight-type ul {
+        margin: 10px 0;
+    }
+    .flight-class ul, .flight-type ul {
+        text-align: center;
+    }
+    .flight-type .item {
+        margin: 0 7px;
+    }
+    .has-icons .mobile-calendar-toggle:before, .has-icons .search-field-wrap.checkout:before, .has-icons .search-field-wrap.checkin:before, .has-icons .form-field-wrap:before, .has-icons .passenger-toggle:before{
+        left: 0;
+    }
+    .has-icons .mobile-calendar-toggle, .has-icons.main-search-form .passenger-toggle, .has-icons.main-search-form input:not([type=checkbox]) {
+        padding-left: 30px;
+    }
+    .mobile-calendar-toggle, .main-search-form .passenger-toggle, .main-search-form input:not([type=checkbox]) {
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .form-fields-wrap-multi, .form-fields-wrap-multi + .form-fields-wrap-multi, .form-fields-wrap-multi .form-filters-wrap.flight-class {
+        margin-top: 20px;
+    }
+    .main-search-form .search-field-wrap.submit, .form-field-button {
+        margin-top: 20px;
+    }
     .form-wrap-multi .form-field-to, .form-wrap-multi .form-field-from, .form-fields-wrap-multi-container .form-field-to, .form-fields-wrap-multi-container .form-field-from, .form-wrap-oneway .form-field-to, .form-wrap-oneway .form-field-from, .main-search-form .search-field-wrap.submit, .main-search-form .search-field-wrap.rooms, .main-search-form .search-field-wrap.checkin, .main-search-form .search-field-wrap.checkout, .form-field-passengers, .form-field-button, .form-field-to, .form-field-from, .form-field-to-date, .form-field-from-date {
         width: 100%;
     }
-}   
+}
