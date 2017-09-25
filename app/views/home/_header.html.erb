@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="row upper_nav_row">
     	<div class="navbar-header">
-        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar, #myNavbar2">
+        	<button type="button" class="navbar-toggle" data-toggle="slide-collapse" data-target="#myNavbar, #myNavbar2">
 	          	<span class="icon-bar"></span>
 	          	<span class="icon-bar"></span>
 	          	<span class="icon-bar"></span>                        
@@ -12,15 +12,15 @@
       	</div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">MY BOOKINGS</a></li>
-          <li class="dropdown"><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button"><i class="glyphicon glyphicon-user"></i>Hello, guest <span class="caret"></span></a>
+            <li><a href="#">MY BOOKINGS</a></li>
+            <li class="dropdown"><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button"><i class="glyphicon glyphicon-user"></i>Hello, guest <span class="caret"></span></a>
         		<ul role="menu" class="dropdown-menu hello_class" aria-labelledby="drop1">
-                <li role="presentation"><a href="#" role="menuitem">SIGN IN</a></li>
-                <li role="presentation"><a href="#" role="menuitem">CREATE A NEW ACCOUNT</a></li>
-                <li role="presentation"><a href="#" role="menuitem">MY BOOKING</a></li>
-                <li role="presentation"><a href="#" role="menuitem">ALERTS & NOTIFICATIONS</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">SIGN IN</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">CREATE A NEW ACCOUNT</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">MY BOOKING</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">ALERTS & NOTIFICATIONS</a></li>
         		</ul>
-    		  </li>
+    		</li>
         </ul>
       </div>
     </div>
@@ -32,16 +32,18 @@
     	<li style="padding-right: 10px"> <%= link_to('CRUISES', {})%></li>
     	<li style="padding-right: 10px"> <%= link_to('SUPPORT', {})%></li>
         <ul class="nav navbar-nav navbar-right">
-        	<li class="flag flag-us"></li>
-        	 <li class="flag_dropdown"><a href="#" id="drop2" data-toggle="dropdown" class="dropdown-toggle" role="button"> USD <b class="caret"></b></a>
+        	<li class="flag flag-us" id="f_flag"></li>
+        	<li class="flag_dropdown"><a href="#" id="drop2 currency_c" data-toggle="dropdown" class="dropdown-toggle" role="button"> <span class="something_currency"> USD </span> <b class="caret"></b></a>
     			<ul role="menu" class="dropdown-menu" aria-labelledby="drop2">
                     <li class="flag flag-us"></li>
-                	<li role="presentation"><a href="#" role="menuitem">USD</a></li> <br /> 
+                	<li role="presentation"><a href="#" id="usd_currency" role="menuitem">USD</a></li> <br /> 
                 	<li class="flag flag-ca"></li>
-                    <li role="presentation"><a href="#" role="menuitem">CAD</a></li> 	
+                    <li role="presentation"><a href="#" id="cad_currency" role="menuitem">CAD</a></li> 	
     			</ul>
 		  	</li>
+            <span class="call_us">Call us 24/7</span>
 		  	<a class="number" href="tel:1-800-717-5015">1-800-717-5015</a>
+            <i class="fa fa-times fa-4x" aria-hidden="true"></i>
         </ul>
       </div>
     </div>

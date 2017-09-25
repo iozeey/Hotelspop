@@ -1,4 +1,3 @@
-
 <div class="hp-photo-wrap">
     <div class="hp-form-wrap general-container">
         <div class="hp-slogan flights" id="flight" style="display: none" data-tab-text="search-flights">
@@ -74,7 +73,10 @@
                                             <input type="hidden" name="seg1_to_code" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg1_date" placeholder="Date" autocomplete="off" class="date-field-from startflightDateMulti" value="" id="dp1505772602983">
+                                            <input readonly="true" type="text" name="seg1_date" placeholder="Date" autocomplete="off" class="date-field-from startflightDateMulti startfd_multi_one" value="" id="dp1505772602983">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date hide_div">
+                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_1" id="dp1505772602984">
                                         </div>
                                     </div>
                                     <div class="form-field-segment">
@@ -97,7 +99,10 @@
                                             <input type="hidden" name="seg2_to_code" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602984">
+                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from startfd_multi_two" value="" id="dp1505772602984">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date hide_div">
+                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_2" id="dp1505772602984">
                                         </div>
                                     </div>
                                     <div class="form-field-segment">
@@ -121,7 +126,10 @@
                                             <input type="hidden" name="seg3_to_code" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg3_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602985">
+                                            <input readonly="true" type="text" name="seg3_date" placeholder="Date" autocomplete="off" class="date-field-from startfd_multi_three" value="" id="dp1505772602985">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date hide_div">
+                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_3" id="dp1505772602984">
                                         </div>
                                     </div>
                                     <div class="form-field-segment">
@@ -133,7 +141,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="form-fields-wrap-multi clearfix" id="inline-search-form-segment-4" style="display:none;">
                                   <div style="overflow:hidden;">
                                         <div class="form-field-wrap form-field-from">
@@ -145,7 +152,10 @@
                                             <input type="hidden" name="seg4_to_code" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg4_date" placeholder="Date" autocomplete="off" class="date-field-from hasDatepicker" value="" id="dp1505772602986">
+                                            <input readonly="true" type="text" name="seg4_date" placeholder="Date" autocomplete="off" class="date-field-from startfd_multi_four" value="" id="dp1505772602986">
+                                        </div>
+                                        <div class="form-field-wrap form-field-from-date hide_div">
+                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_4" id="dp1505772602984">
                                         </div>
                                   </div>
                                   <div class="form-field-segment">
@@ -430,7 +440,7 @@
   <div class="container">
     <div class="row img_div">
       <div class="col-md-12 inside_img_div">
-          <div class="col-md-6">
+          <div class="col-sm-6 col-md-6">
 
             <div class="col-md-12 img_bottom_margin">
               <%= link_to root_url do %>
@@ -460,7 +470,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-sm-6 col-md-6">
             <div class="col-md-12 img_bottom_margin">
               <%= link_to root_url do %>
                 <%= image_tag "chicago.jpg", :class => "img-responsive img-rounded" %>

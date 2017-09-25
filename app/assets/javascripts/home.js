@@ -342,8 +342,15 @@ function oneWay(){
 function multiTrip(){
     document.getElementById("inline-search-form-segment-1").style.display = "block";
     document.getElementById("dp1505772602982").style.display = "none";
-    document.getElementById("leaving_from").style.width = "40%";
-    document.getElementById("going_to").style.width = "40%";
+    // if ( $(window).width() > 1050) {      
+        document.getElementById("leaving_from").style.width = "40%";
+        document.getElementById("going_to").style.width = "40%";
+    // } 
+    // else {
+    //     document.getElementById("leaving_from").style.width = "50%";
+    //     document.getElementById("going_to").style.width = "50%";
+    //     document.getElementById("dp1505772602983").style.width = "100%"; 
+    // }
     var rTrip = document.getElementById("toggle-roundtrip");
     var oTrip = document.getElementById("toggle-oneway");
     var mTrip = document.getElementById("toggle-multi");
