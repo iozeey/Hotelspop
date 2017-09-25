@@ -1,6 +1,6 @@
 <div class="hp-photo-wrap">
     <div class="hp-form-wrap general-container">
-        <div class="hp-slogan flights" id="flight" style="display: none" data-tab-text="search-flights">
+        <div class="hp-slogan flights" id="flight" style="display: none">
             <span class="main">Find <strong>Cheap Flights</strong>
                 <span class="mobile-break">and <strong>Save</strong></span>
             </span>
@@ -8,7 +8,7 @@
                 <strong>Search</strong> and <strong>Compare</strong> our best deals with over 440+ airlines - <strong>Book now!</strong>
             </div>
         </div>
-        <div class="hp-slogan hotels" id="hotel" data-tab-text="search-hotels">
+        <div class="hp-slogan hotels" id="hotel">
             <span class="main"><strong>Need a place to stay?</strong></span>
             <div class="slogan-subtitle">
                 Hotelspop offers <strong>thousands of hotel accommodations</strong> worldwide with <strong>no booking fees!</strong>
@@ -25,8 +25,8 @@
             </div>
             
             <div class="search-selection-wrap home-page">
-                <form name="air_search_form" action="" method="get" class="inline-search-form-form main-search-form has-icons" style="display: none" id="flightForm" data-tab-target="search-flights" data-selected-currency="USD" data-hotels-search="true">
-                <input type="hidden" name="new_search" value="1">
+                <form name="" action="" method="get" class="inline-search-form-form main-search-form has-icons" style="display: none" id="flightForm" data-tab-target="search-flights" data-selected-currency="USD" data-hotels-search="true">
+                <input type="hidden" name="" value="1">
 
                 <div class="inline-search-form form-wrap-roundtrip" id="inline-search-form-1">
                     <div class="form-filters-wrap flight-type clearfix">
@@ -38,25 +38,24 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="display-table table-wrap">
                         <div class="column inputs">
                             <div class="form-fields-wrap clearfix">
                                 <div class="form-field-wrap form-field-from" id="leaving_from">
-                                    <input type="text" name="seg0_from" placeholder="Leaving from" class="airport-related" value="">
-                                    <input type="hidden" name="seg0_from_code" value="">
+                                    <input type="text" name="" placeholder="Leaving from" class="airport-related" value="">
+                                    <input type="hidden" name="" value="">
                                 </div>
                                 <div class="form-field-wrap form-field-to" id="going_to">
-                                    <input type="text" name="seg0_to" placeholder="Going to" class="airport-related" value="">
-                                    <input type="hidden" name="seg0_to_code" value="">
+                                    <input type="text" name="" placeholder="Going to" class="airport-related" value="">
+                                    <input type="hidden" name="" value="">
                                 </div>
 
                                 <div class="form-field-wrap form-field-from-date">
-                                    <input readonly="true" type="text" name="seg0_date" placeholder="Departing" class="date-field-from hasDatepicker startflightDate" value="" id="dp1505772602981">
+                                    <input readonly="true" type="text" name="" placeholder="Departing" class="date-field-from startflightDate">
                                 </div>
 
                                 <div class="form-field-wrap form-field-to-date">
-                                    <input readonly="true" type="text" name="seg1_date" placeholder="Returning" class="date-field-to hasDatepicker endflightDate" value="" id="dp1505772602982">
+                                    <input readonly="true" type="text" name="" placeholder="Returning" class="date-field-to endflightDate" value="">
                                 </div>
                                 <div id="multi-city-wrapper" class="multi-city-wrapper mobile-only"></div>
                             </div>
@@ -65,18 +64,18 @@
                                 <div class="form-fields-wrap-multi clearfix displayed-field" id="inline-search-form-segment-1">
                                     <div style="overflow:hidden;">
                                         <div class="form-field-wrap form-field-from">
-                                            <input type="text" name="seg1_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="" id="multi_leaving">
-                                            <input type="hidden" name="seg1_from_code" value="">
+                                            <input type="text" name="" placeholder="Leaving from" class="airport-related" value="" id="multi_leaving">
+                                            <input type="hidden" name="" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-to">
-                                            <input type="text" name="seg1_to" placeholder="Going to" autocomplete="off" class="airport-related" value="" id="multi_going">
-                                            <input type="hidden" name="seg1_to_code" value="">
+                                            <input type="text" name="" placeholder="Going to" class="airport-related" value="" id="multi_going">
+                                            <input type="hidden" name="" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg1_date" placeholder="Date" autocomplete="off" class="date-field-from startflightDateMulti startfd_multi_one" value="" id="dp1505772602983">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from startflightDateMulti startfd_multi_one" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date hide_div">
-                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_1" id="dp1505772602984">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from endDate_1">
                                         </div>
                                     </div>
                                     <div class="form-field-segment">
@@ -91,18 +90,18 @@
                                 <div class="form-fields-wrap-multi clearfix" id="inline-search-form-segment-2" style="display:none;">
                                     <div style="overflow:hidden;">
                                         <div class="form-field-wrap form-field-from">
-                                            <input type="text" name="seg2_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
-                                            <input type="hidden" name="seg2_from_code" value="">
+                                            <input type="text" name="" placeholder="Leaving from" class="airport-related" value="">
+                                            <input type="hidden" name="" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-to">
-                                            <input type="text" name="seg2_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
-                                            <input type="hidden" name="seg2_to_code" value="">
+                                            <input type="text" name="" placeholder="Going to" class="airport-related" value="">
+                                            <input type="hidden" name="" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from startfd_multi_two" value="" id="dp1505772602984">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from startfd_multi_two" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date hide_div">
-                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_2" id="dp1505772602984">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from endDate_2">
                                         </div>
                                     </div>
                                     <div class="form-field-segment">
@@ -118,18 +117,18 @@
                                 <div class="form-fields-wrap-multi clearfix" id="inline-search-form-segment-3" style="display:none;">
                                     <div style="overflow:hidden;">
                                         <div class="form-field-wrap form-field-from">
-                                            <input type="text" name="seg3_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
-                                            <input type="hidden" name="seg3_from_code" value="">
+                                            <input type="text" name="" placeholder="Leaving from" class="airport-related" value="">
+                                            <input type="hidden" name="" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-to">
-                                            <input type="text" name="seg3_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
-                                            <input type="hidden" name="seg3_to_code" value="">
+                                            <input type="text" name="" placeholder="Going to" class="airport-related" value="">
+                                            <input type="hidden" name="s" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg3_date" placeholder="Date" autocomplete="off" class="date-field-from startfd_multi_three" value="" id="dp1505772602985">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from startfd_multi_three" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date hide_div">
-                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_3" id="dp1505772602984">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from endDate_3">
                                         </div>
                                     </div>
                                     <div class="form-field-segment">
@@ -144,18 +143,18 @@
                                 <div class="form-fields-wrap-multi clearfix" id="inline-search-form-segment-4" style="display:none;">
                                   <div style="overflow:hidden;">
                                         <div class="form-field-wrap form-field-from">
-                                            <input type="text" name="seg4_from" placeholder="Leaving from" autocomplete="off" class="airport-related" value="">
-                                            <input type="hidden" name="seg4_from_code" value="">
+                                            <input type="text" name="" placeholder="Leaving from"   class="airport-related" value="">
+                                            <input type="hidden" name="" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-to">
-                                            <input type="text" name="seg4_to" placeholder="Going to" autocomplete="off" class="airport-related" value="">
-                                            <input type="hidden" name="seg4_to_code" value="">
+                                            <input type="text" name="" placeholder="Going to"   class="airport-related" value="">
+                                            <input type="hidden" name="" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date">
-                                            <input readonly="true" type="text" name="seg4_date" placeholder="Date" autocomplete="off" class="date-field-from startfd_multi_four" value="" id="dp1505772602986">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from startfd_multi_four" value="">
                                         </div>
                                         <div class="form-field-wrap form-field-from-date hide_div">
-                                            <input readonly="true" type="text" name="seg2_date" placeholder="Date" autocomplete="off" class="date-field-from endDate_4" id="dp1505772602984">
+                                            <input readonly="true" type="text" name="" placeholder="Date" class="date-field-from endDate_4">
                                         </div>
                                   </div>
                                   <div class="form-field-segment">
@@ -181,7 +180,7 @@
                                               <div class="pass-left column label">Adult</div>
                                               <div class="pass-right column picker">
                                                   <div class="passenger-picker">
-                                                      <input type="hidden" class="passengerType" name="num_adults" data-field-min="1" data-field-limit="8" data-field-id="num_adults" value="1">
+                                                      <input type="hidden" class="passengerType" name="" data-field-id="num_adults" value="1">
                                                       <div class="display-table picker-wrapper">
                                                           <div class="column picker-button remove disabled">
                                                               <i class="fa fa-minus remove-passenger"></i>
@@ -203,7 +202,7 @@
                                               </div>
                                               <div class="pass-right column picker">
                                                   <div class="passenger-picker">
-                                                      <input type="hidden" class="passengerType" name="num_children" data-field-min="0" data-field-limit="8" data-field-id="num_children" value="0">
+                                                      <input type="hidden" class="passengerType" name="" data-field-id="num_children" value="0">
                                                       <div class="display-table picker-wrapper">
                                                           <div class="column picker-button remove disabled">
                                                               <i class="fa fa-minus remove-fchild"></i>
@@ -226,7 +225,7 @@
                                               </div>
                                               <div class="pass-right column picker">
                                                   <div class="passenger-picker">
-                                                      <input type="hidden" class="passengerType" name="num_infants" data-field-min="0" data-field-limit="4" data-field-id="num_infants" value="0">
+                                                      <input type="hidden" class="passengerType" name="" data-field-id="num_infants" value="0">
                                                       <div class="display-table picker-wrapper">
                                                           <div class="column picker-button remove disabled remove-finfant">
                                                               <i class="fa fa-minus"></i>
@@ -249,7 +248,7 @@
                                               </div>
                                               <div class="pass-right column picker">
                                                   <div class="passenger-picker">
-                                                      <input type="hidden" class="passengerType" name="num_infants_lap" data-field-min="0" data-field-limit="4" data-field-id="num_infants_lap" value="0">
+                                                      <input type="hidden" class="passengerType" name="" data-field-id="num_infants_lap" value="0">
                                                       <div class="display-table picker-wrapper">
                                                           <div class="column picker-button remove disabled remove-linfant">
                                                               <i class="fa fa-minus"></i>
@@ -308,15 +307,15 @@
               </div>
               <ul class="display-table main-search-form-field-wrap" style="padding-left: 0px">
                   <li class="column search-field-wrap form-field-wrap destination">
-                      <input id="hotel_autocomplete" name="ss" placeholder="Select a city, airport or landmark" autocomplete="off" type="text" class="airport-related ui-autocomplete-input">
+                      <input id="hotel_autocomplete" name="ss" placeholder="Select a city, airport or landmark" type="text" class="airport-related ui-autocomplete-input">
                       <div class="main-search-form-validation">Please type a destination</div>
                   </li>
                   <li class="column search-field-wrap form-field-wrap checkin">
-                      <input name="checkin" readonly="true" placeholder="Check-in" autocomplete="off" type="text" class="hasDatepicker startDate" val="" id="dp1505772602979">
+                      <input name="checkin" readonly="true" placeholder="Check-in"   type="text" class="startDate">
                       <div class="main-search-form-validation">Select your Check-In date</div>
                   </li>
                   <li class="column search-field-wrap form-field-wrap checkout">
-                      <input name="checkout" readonly="true" placeholder="Check-out" autocomplete="off" type="text" class="hasDatepicker endDate" val="" id="dp1505772602980">
+                      <input name="checkout" readonly="true" placeholder="Check-out"   type="text" class="endDate">
                       <div class="main-search-form-validation">Select your Check-out date</div>
                   </li>
                   <li class="column search-field-wrap rooms"  id="room_dropdown">
@@ -347,7 +346,7 @@
                                   <div class="pass-left column label">Adults</div>
                                   <div class="pass-right column picker">
                                       <div class="passenger-picker">
-                                          <input type="hidden" class="passengerType" name="group_adults" data-field-min="1" data-field-limit="30" data-field-id="group_adults">
+                                          <input type="hidden" class="passengerType" name="" data-field-min="1" data-field-limit="30" data-field-id="group_adults">
                                           <div class="display-table picker-wrapper">
                                               <div class="column picker-button remove">
                                                   <i class="fa fa-minus remove-adult"></i>
@@ -366,7 +365,7 @@
                                   <div class="pass-left column label">Children</div>
                                   <div class="pass-right column picker">
                                       <div class="passenger-picker">
-                                          <input type="hidden" class="passengerType" name="group_children" data-field-min="0" data-field-limit="10" data-field-id="group_children" value="0">
+                                          <input type="hidden" class="passengerType" name="" data-field-min="0" data-field-limit="10" data-field-id="group_children" value="0">
                                           <div class="display-table picker-wrapper">
                                               <div class="column picker-button remove disabled">
                                                   <i class="fa fa-minus remove-child"></i>

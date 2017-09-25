@@ -18,8 +18,11 @@ $(document).ready(function(){
     $('[data-toggle="slide-collapse"]').on('click', function() {
     	$navMenuCont = $($(this).data('target'));
     	$navMenuCont.animate({'width':'toggle'}, 350);
+        $("body > *").not('#navbar_default').css("opacity", '0.5');
 	});
     $(".fa-times").click(function(){
         $("#myNavbar, #myNavbar2").fadeOut(300);
+        $("body > *").css("opacity", '1');
     });
+
 });
