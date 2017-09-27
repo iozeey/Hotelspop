@@ -313,14 +313,11 @@ class datePicker {
         p.appendChild(
             document.createTextNode('Close')
         );
-
         p.addEventListener('click', function(){
             vm.toggleClass(document.getElementsByClassName(vm.calendarWidget)[0], 'hidden');
         });
-
         closeWidget.appendChild(p);
         widget.appendChild(closeWidget);
-
         document.body.appendChild(widget);
     }
 }

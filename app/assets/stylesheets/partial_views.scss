@@ -191,6 +191,7 @@
     }
     #myNavbar {
         position: fixed;
+        overflow: hidden;
         top: 0;
         right: 0;
         z-index: 9999;
@@ -203,17 +204,20 @@
             a{
                 color: grey !important;
             }
-        }   
+        }
     }
     #myNavbar2 {
         position: fixed;
-        top: 100px;
+        overflow: hidden;
+        border-top: none;
+        top: 90px;
         right: 0;
         z-index: 9999;
         width: 35%;
         height: 100%;
         background-color: white;
         li{
+            padding-top: 10px;
             display: inline-block;
             width: 100%;
             a{
@@ -230,6 +234,7 @@
         display: inline-block !important;
         width: 16px !important;
         height: 11px !important;
+        padding-top: 0px !important;
     }
     .navbar .bottom_nav_row .number{
         /* background-color: #555555 !important; */

@@ -273,7 +273,6 @@ $( document ).ready(function() {
             $(".remove-child").prop("disabled", true);
         }
     });
-
     // Function for selecting Packages
     $( "select" )
     .change(function() {
