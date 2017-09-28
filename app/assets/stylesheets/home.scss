@@ -780,6 +780,14 @@ clearfix:after {
     }
 }
 @media only screen and (max-width: 600px){
+    .main_heading{
+        font-size: 18px;
+        line-height: 14px;
+    }
+    .subtitle{
+        font-size: 14px;
+        line-height: 12px;
+    }
     .hp-photo-wrap {
         padding: 15px;
     }
@@ -788,6 +796,18 @@ clearfix:after {
     }
 }
 @media only screen and (max-width: 500px){
+    .main_heading{
+        font-size: 16px;
+        line-height: 14px;
+    }
+    .subtitle{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .fa-check-circle-o{
+        color: green;
+        font-size: 20px !important;
+    }
     .hp-photo-wrap {
         padding: 0;
         background: none;

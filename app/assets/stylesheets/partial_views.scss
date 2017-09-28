@@ -266,3 +266,19 @@
         cursor: "wait";
     }
 }
+@media only screen and (max-width: 600px){
+  #myNavbar {
+      width: 50%;
+  }
+  #myNavbar2{
+      width: 50%;
+  }
+}
+@media only screen and (max-width: 480px){
+  #myNavbar {
+      width: 55%;
+  }
+  #myNavbar2{
+      width: 55%;
+  }
+}
